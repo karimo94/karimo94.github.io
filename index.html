@@ -7,7 +7,10 @@
         <meta name="author" content="">
 
         <!-- site icon -->
-        <link rel="icon" href="media/kc_icon.png">
+        <link rel="icon" href="media/kc_icon.png">  
+
+        <!-- Load icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
         <title>King County Prosecuting Attorney - King County</title>
     
@@ -31,7 +34,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-              <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <img src="media/kc_icon.png" height="50px" width="50px" alt="King County">
+                
+              <a class="navbar-brand" href="#">Prosecuting Attorney</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -51,11 +56,17 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                   </li>
+                  <li class="nav-item">
+                      <form>
+                        <input type="text" placeholder="Search kingcounty.gov..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                  </li>
                 </ul>
               </div>
             </div>
           </nav>
-      
+      <br>
           <!-- Page Content -->
           <div class="container">
             <div class="row">
