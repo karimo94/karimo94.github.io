@@ -2,48 +2,43 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="Redesign of King County Prosecuting Attorney Homepage" content="">
+        <meta name="Karim Oumghar" content="">
 
         <!-- site icon -->
         <link rel="icon" href="media/kc_icon.png">  
 
         <!-- Load icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+        
         <title>King County Prosecuting Attorney - King County</title>
     
         <!-- Bootstrap core CSS -->
         <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-        <!-- Custom styles for this template -->
-        <style>
-          body {
-            padding-top: 54px;
-          }
-          @media (min-width: 992px) {
-            body {
-              padding-top: 56px;
-            }
-          }
-    
-        </style>
+
+        <!-- Link style.css -->
+        <link href="style.css" rel="stylesheet">
+
+        <!-- Link JavaScript files here -->
+        <script src="js/searchBtnScript.js"></script>
+
+        
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <img src="media/kc_icon.png" height="50px" width="50px" alt="King County">
-                
-              <a class="navbar-brand" href="#">Prosecuting Attorney</a>
+                <div class="vl"></div>
+              <a class="navbar-brand" href="#">King County</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="#"><i class="fa fa-home"></i>Home
                       <span class="sr-only">(current)</span>
                     </a>
                   </li>
@@ -57,10 +52,18 @@
                     <a class="nav-link" href="#">Contact</a>
                   </li>
                   <li class="nav-item">
-                      <form>
-                        <input type="text" placeholder="Search kingcounty.gov..." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                      </form>
+                     <!--<form id="mainSearchForm">
+                        <input type="text" placeholder="Search kingcounty.gov..." name="search" id="mainSearchBar">
+                        <button type="submit"  id="searchBtn"><i class="fa fa-search"></i></button>
+                      </form>-->
+                      <form class="form-inline" role="form">
+                          <input type="text" class="  search-query form-control" placeholder="Search kingcounty.gov..." />
+                          <span class="input-group-btn">
+                              <button class="btn btn-danger" type="button">
+                                  <i class="fa fa-search"></i>
+                              </button>
+                          </span>
+                       </form>
                   </li>
                 </ul>
               </div>
@@ -68,11 +71,16 @@
           </nav>
       <br>
           <!-- Page Content -->
+
+          
+
           <div class="container">
+              <header class="frontpage-header" role="banner">
+                  <h1 class="mt-5">Prosecuting Attorney</h1>
+                </header>
             <div class="row">
               <div class="col-lg-12 text-center">
-                <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+                <p class="lead">Content here...</p>
                 <ul class="list-unstyled">
                   <li>Bootstrap 4.1.1</li>
                   <li>jQuery 3.3.1</li>
