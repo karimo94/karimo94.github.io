@@ -12,27 +12,24 @@ body {
     border-left: 6px solid #99cc00;
     height: 50px;
 }
-.navbar-brand
+.vl
 {
-    padding-left:1em
+    margin-left: -1em;
 }
-
 .frontpage-header
 {
     margin: 8px -15px 0px 0px;
-    font-family: 'Helvetica'
+    font-family: 'Roboto', sans-serif;
 }
 
 
-
-
-#custom-search-input {
+#custom-search-form {
     margin:0;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 0;
 }
 
-#custom-search-input .search-query {
+#custom-search-form .search-query {
     padding-right: 3px;
     padding-right: 4px \9;
     padding-left: 3px;
@@ -43,9 +40,13 @@ body {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    -webkit-transition: width  0.2s ease-in-out;
+-moz-transition:width  0.2s ease-in-out;
+-o-transition: width  0.2s ease-in-out;
+transition: width  0.2s ease-in-out;
 }
 
-#custom-search-input button {
+#custom-search-form button {
     border: 0;
     background: none;
     /** belows styles are working good */
@@ -58,9 +59,11 @@ body {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    color:#D9230F;
 }
 
 .search-query:focus + button {
     z-index: 3;   
+}   
+.search-query:focus{
+    width: 260px;
 }
