@@ -1,4 +1,3 @@
-/*custom styles for the skeleton*/
 body {
     padding-top: 54px;
   }
@@ -8,11 +7,11 @@ body {
     }
   }
 
-.navbar .container .vl {
-    border-left: 6px solid #99cc00;
+.navbar .container .homelogo {
+    border-right: 6px solid #99cc00;
     height: 50px;
 }
-.vl
+.homelogo
 {
     margin-left: -1em;
 }
