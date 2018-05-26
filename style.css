@@ -68,23 +68,25 @@ transition: width  0.2s ease-in-out;
 }
 
 /*right side bar of widgets*/
-#sidebar-right{
+#social-media-panel{
     float:right;
     margin-top: -5em;
+    margin-right: 8em;
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
-#sidebar-right h3{
+.panel-heading{
     background-color: black;
     color: white;
+    font-size:20px;
     border-bottom: 10px solid lightblue;
 }
 /*social media icons*/
 
-#sidebar-right ul{
+#social-media-panel ul{
     list-style-type:none;
 }
-#sidebar-right li{
+#social-media-panel li{
     display: inline;
     margin: 5px;
     text-align: center;
