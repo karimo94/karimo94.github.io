@@ -78,7 +78,6 @@ transition: width  0.2s ease-in-out;
 .panel-heading{
     background-color: black;
     color: white;
-    font-size:20px;
     border-bottom: 10px solid lightblue;
 }
 /*social media icons*/
@@ -88,7 +87,7 @@ transition: width  0.2s ease-in-out;
 }
 #social-media-panel li{
     display: inline;
-    margin: 5px;
+    
     text-align: center;
 }
 /* Add a hover effect if you want */
@@ -141,4 +140,10 @@ transition: width  0.2s ease-in-out;
     height: 50px;
     text-align: center;
     text-decoration: none;
+}
+/* footer */
+
+footer{
+    background-color: black;
+    color: white;
 }
