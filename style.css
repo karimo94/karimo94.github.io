@@ -70,7 +70,6 @@ transition: width  0.2s ease-in-out;
 /*right side bar of widgets*/
 #sidebar-right{
     float:right;
-    margin-right: 8em;
     margin-top: -5em;
     position: relative;
     font-family: 'Roboto', sans-serif;
