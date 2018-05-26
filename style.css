@@ -67,6 +67,19 @@ transition: width  0.2s ease-in-out;
     width: 240px;
 }
 
+/*right side bar of widgets*/
+#sidebar-right{
+    float:right;
+    margin-right: 8em;
+    margin-top: -5em;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+#sidebar-right h3{
+    background-color: black;
+    color: white;
+    border-bottom: 10px solid lightblue;
+}
 /*social media icons*/
 
 #sidebar-right ul{
@@ -127,16 +140,4 @@ transition: width  0.2s ease-in-out;
     height: 50px;
     text-align: center;
     text-decoration: none;
-}
-#sidebar-right{
-    float:right;
-    margin-right: 8em;
-    margin-top: -5em;
-    
-    font-family: 'Roboto', sans-serif;
-}
-#sidebar-right h3{
-    background-color: black;
-    color: white;
-    border-bottom: 10px solid lightblue;
 }
