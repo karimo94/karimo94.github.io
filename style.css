@@ -1,5 +1,8 @@
 body {
     padding-top: 54px;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
+    
   }
   @media (min-width: 992px) {
     body {
@@ -18,16 +21,18 @@ body {
 .frontpage-header
 {
     margin: 8px -15px 0px 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
 }
 
+h2{
+    font-family: 'Quicksand', sans-serif;
+}
 
 /*right side bar of widgets*/
 #social-media-panel{
-    float:right;
     margin-top: -5em;
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 .panel-heading{
     background-color: black;
