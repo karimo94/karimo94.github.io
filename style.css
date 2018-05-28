@@ -103,7 +103,7 @@ h2{
 /*media carousel styles*/
 .carousel-inner{
     width:100%;
-    min-height: 500px !important;
+    max-height: 500px !important;
   }
 /* footer */
 
