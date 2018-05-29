@@ -24,7 +24,7 @@
 
         <!-- Link style.css -->
         <link href="style.css" rel="stylesheet">
-        
+        <script src="js/scrollscript.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -113,11 +113,11 @@
                       </div>
                     </a>
                   </div>
-                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <a class="carousel-control-prev" href="#carouselNewsMedia" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselNewsMedia" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
@@ -153,7 +153,7 @@
                     <div class="carousel-inner" role="listbox">
     
                       <div class="carousel-item active">
-                        <a href="#"><img class="d-block img-fluid" src="media/community.jpg" alt="First slide">
+                        <a href="#"><img class="d-block img-fluid" src="media/comm_2.jpg" alt="First slide">
                         
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Victim Assitance, Restitution, Services</h3>
@@ -168,38 +168,24 @@
 
             <h3 class="lead">Recent Cases</h3>
           <!-- scrollspy for recent cases (docket) -->
-          <nav id="navbar-example2" class="navbar navbar-light bg-light">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link" href="#fat">@fat</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#mdo">@mdo</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#one">one</a>
-                    <a class="dropdown-item" href="#two">two</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#three">three</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-              <h4 id="fat">@fat</h4>
+      <body id="docket">
+          <div data-spy="scroll" data-target="#scrollspy" id="scrollspy" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+            <div data-spy="scroll" data-target="#scrollspy" data-offset="0" class="scrollspy-example">
+              <h4 id="list-item-1">Item 1</h4>
               <p>...</p>
-              <h4 id="mdo">@mdo</h4>
+              <h4 id="list-item-2">Item 2</h4>
               <p>...</p>
-              <h4 id="one">one</h4>
+              <h4 id="list-item-3">Item 3</h4>
               <p>...</p>
-              <h4 id="two">two</h4>
-              <p>...</p>
-              <h4 id="three">three</h4>
+              <h4 id="list-item-4">Item 4</h4>
               <p>...</p>
             </div>
+      </body>
           <!-- end of scrollspy -->
           
             <h3 class="lead">Profiles</h3>
