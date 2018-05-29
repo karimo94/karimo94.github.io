@@ -77,25 +77,14 @@
   <br>
 
       <!-- Page Content -->
-
-      <div class="container">
-
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
           <header class="frontpage-header" role="banner">
               <h1 class="mt-5">Prosecuting Attorney</h1>
             </header>
-            
-       <!-- right side section -->
- <div class="float-right" id="social-media-panel">
-  <h3 class="card-header"><span>Get In Touch</span></h3>	
-    <div class="card-body" id="sidebar-right" >       
-      
-        <li class="maxflat_social_facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li class="maxflat_social_twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li class="maxflat_social_linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li class="maxflat_social_email"><a href="#"><i class="fa fa-envelope"></i></a></li>
-  
-    </div>
- </div>
+        </div>
+</div>
+  <div class="container">
 
   <!--Each heading will be a link too-->
     <div class="row">
@@ -103,11 +92,11 @@
         <div class="col-lg-12">
           <div class="card-body">
             <h2 class="card-header"><a href="#">News/Media</a></h2>
-              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div id="carouselNewsMedia" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
 
                   <div class="carousel-item active">
-                    <a href="#"><img class="d-block img-fluid" src="https://www.lenawee.mi.us/ImageRepository/Document?documentID=663" alt="First slide">
+                    <a href="#"><img class="d-block img-fluid" src="https://1yfci5yhnwj32rp6f17dt99q-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/10049044_web1_copy_180112-ISS-Providence-Heights-Judge-1200x800.jpg" alt="First slide">
                     
                     <div class="carousel-caption d-none d-md-block">
                         <h3>News Releases From The Prosecuting Attorney</h3>
@@ -116,7 +105,13 @@
                   </a>
                   </div>
                   <div class="carousel-item">
-                      <iframe class="embed-responsive" width="672" height="380"  src="https://www.youtube.com/embed/4ISVuExSN0A" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/watch?v=_nybqFosTp8"><img class="d-block img-fluid" src="https://i.ytimg.com/vi/_nybqFosTp8/maxresdefault.jpg" alt="Second slide">
+                  <!--<iframe class="embed-responsive" width="672" height="380"  src="https://www.youtube.com/embed/4ISVuExSN0A" frameborder="0" allowfullscreen></iframe>-->
+                      <div class="carousel-caption d-none d-md-block">
+                          <h3>Watch: Creative Justice-4Culture</h3>
+                          <p>A new arts-based alternative to incarceration for young people in King County.</p>
+                      </div>
+                    </a>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -130,10 +125,83 @@
             </div>
           </div>
 
+          
+          <div class="col-lg-12">
+              <div class="card-body">
+                <h2 class="card-header"><a href="#">Careers</a></h2>
+                <div id="carouselJobs" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+    
+                      <div class="carousel-item active">
+                        <a href="#"><img class="d-block img-fluid" src="media/jobs_banner.png" alt="First slide">
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Jobs, Volunteering, and Internships available</h3>
+                            <p>Build your career, gain experiences, change lives.</p>
+                        </div>
+                      </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
 
-            <h3 class="lead">Jobs</h3>
-            <h3 class="lead">Community Engagements &amp; Services</h3>
+          <div class="col-lg-12">
+              <div class="card-body">
+                <h2 class="card-header"><a href="#">Community Engagements</h2></a>
+                <div id="carouselCommunity" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+    
+                      <div class="carousel-item active">
+                        <a href="#"><img class="d-block img-fluid" src="media/community.jpg" alt="First slide">
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Victim Assitance, Restitution, Services</h3>
+                            <p>Responding to the needs of crime victims and witnesses.</p>
+                        </div>
+                      </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
             <h3 class="lead">Recent Cases</h3>
+          <!-- scrollspy for recent cases (docket) -->
+          <nav id="navbar-example2" class="navbar navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#fat">@fat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mdo">@mdo</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#one">one</a>
+                    <a class="dropdown-item" href="#two">two</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#three">three</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+              <h4 id="fat">@fat</h4>
+              <p>...</p>
+              <h4 id="mdo">@mdo</h4>
+              <p>...</p>
+              <h4 id="one">one</h4>
+              <p>...</p>
+              <h4 id="two">two</h4>
+              <p>...</p>
+              <h4 id="three">three</h4>
+              <p>...</p>
+            </div>
+          <!-- end of scrollspy -->
+          
             <h3 class="lead">Profiles</h3>
             
           </div>
@@ -187,7 +255,43 @@
     
           </div>
           <!-- Grid column -->
-    
+          <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+                  <!-- Links -->
+                  <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                    <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                  <p>
+                    <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                  <p>
+                    <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+          
+                </div>
+          <hr>
+              <ul class="list-unstyled list-inline text-center" id="social-media-links">
+
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                      <i class="fa fa-facebook"> </i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                      <i class="fa fa-linkedin"> </i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-en mx-1">
+                      <i class="fa fa-envelope"> </i>
+                    </a>
+                  </li>
+                  
+                </ul>
+                <!-- Social buttons -->
+              
+             </div>
         </div>
         <!-- Grid row -->
     
@@ -195,8 +299,8 @@
       <!-- Footer Links -->
     
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+      <div class="footer-copyright text-center py-3">© King County, WA 2018:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> kingcounty.gov</a>
       </div>
       <!-- Copyright -->
     
