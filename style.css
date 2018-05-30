@@ -132,7 +132,10 @@ h2{
 .card-img-top{
     max-height: 300px !important;
 }
-
+/* for the docket */
+.collapse, .card-body{
+    word-wrap: break-word;
+}
 
 /* footer */
 
