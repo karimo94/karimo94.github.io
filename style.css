@@ -111,16 +111,27 @@ h2{
     background: rgba(0, 0, 0, 0.35);
 }
 
-/* scrollspy */
+/* docket/accordion */
 
-#docket {
-    position: relative; 
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.card-img-top{
+    max-height: 300px !important;
+}
 
 
 /* footer */
@@ -128,4 +139,10 @@ h2{
 footer{
     background-color: black;
     color: white;
+}
+
+#newsletterBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
 }

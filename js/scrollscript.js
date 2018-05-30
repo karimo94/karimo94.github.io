@@ -1,1 +1,0 @@
-$('#docket').scrollspy({ target: '#scrollspy' })
