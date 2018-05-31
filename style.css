@@ -111,60 +111,11 @@ h2{
     background: rgba(0, 0, 0, 0.35);
 }
 
-/* docket/accordion */
-
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;
-}
 
 .card-img-top{
     max-height: 300px !important;
 }
-/* for the docket */
-.collapse, .card-body{
-    word-wrap: break-word;
-}
-.card-link:after {
-    content: '‒';
-    font-weight: bold;
-    float:right;
-    vertical-align: middle;
-    font-size:20px;
-    color:#000;
-  -webkit-animation: minus 0.8s;
-    animation: minus 0.8s;
- }
- .card-link.collapsed:after {
-    content: '+';
-    font-weight: bold;
-    vertical-align: middle;
-    font-size: 20px;
-   -webkit-animation: plus 0.8s;
-    animation: plus 0.8s;
- } 
- 
- @keyframes minus {
-     0% {transform: rotate(360deg);}
-     0% {-webkit-transform: rotate(360deg);}
- }
- 
- @keyframes plus {
-    0% {transform: rotate(-360deg);}
-    0% {-webkit-transform: rotate(-360deg);}
- }
+
 /* footer */
 
 footer{
@@ -177,3 +128,67 @@ footer{
     color: white;
     border: none;
 }
+
+/* accordion, for the docket*/
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #000;
+    overflow: hidden;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #C1EDF8;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+  }
+  .blue label {
+    background: #2980b9;
+  }
+  .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #FFFFFF;
+    word-wrap: break-word;
+    transition: max-height .35s;
+  }
+  .blue .tab-content {
+    background: #3498db;
+  }
+  .tab-content p {
+    margin: 1em;
+  }
+  /* :checked */
+  input:checked ~ .tab-content {
+    max-height: none;
+  }
+  /* Icon */
+  label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    transition: all .35s;
+  }
+  input[type=checkbox] + label::after {
+    content: "+";
+  }
+  
+  input[type=checkbox]:checked + label::after {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  
