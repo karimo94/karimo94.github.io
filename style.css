@@ -129,6 +129,7 @@ h2{
 .active, .accordion:hover {
     background-color: #ccc;
 }
+
 .card-img-top{
     max-height: 300px !important;
 }
@@ -136,7 +137,34 @@ h2{
 .collapse, .card-body{
     word-wrap: break-word;
 }
-
+.card-link:after {
+    content: '‒';
+    font-weight: bold;
+    float:right;
+    vertical-align: middle;
+    font-size:20px;
+    color:#000;
+  -webkit-animation: minus 0.8s;
+    animation: minus 0.8s;
+ }
+ .card-link.collapsed:after {
+    content: '+';
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 20px;
+   -webkit-animation: plus 0.8s;
+    animation: plus 0.8s;
+ } 
+ 
+ @keyframes minus {
+     0% {transform: rotate(360deg);}
+     0% {-webkit-transform: rotate(360deg);}
+ }
+ 
+ @keyframes plus {
+    0% {transform: rotate(-360deg);}
+    0% {-webkit-transform: rotate(-360deg);}
+ }
 /* footer */
 
 footer{
