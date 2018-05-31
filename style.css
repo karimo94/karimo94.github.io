@@ -137,12 +137,12 @@ footer{
     color: #000;
     overflow: hidden;
   }
-  input {
+.tab  input {
     position: absolute;
     opacity: 0;
     z-index: -1;
   }
-  label {
+.tab  label {
     position: relative;
     display: block;
     padding: 0 0 0 1em;
