@@ -1,159 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="Redesign of King County Prosecuting Attorney Homepage" content="">
-        <meta name="Karim Oumghar" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Redesign of King County Prosecuting Attorney Homepage" content="">
+  <meta name="Karim Oumghar" content="">
+  <meta name="description" content=" King County Prosecuting Attorney's Home Page, latest news from the King County Prosecuting Attorney, Daniel T. Satterberg, case updates, community services, and jobs.">
+  <meta name="theme-color" content="#000">
 
-        <!-- site icon -->
-        <link rel="shortcut icon" href="media/kc_icon.png" type="image/x-icon">  
+  <!-- site icon -->
+  <link rel="shortcut icon" href="media/kc_icon.png" type="image/x-icon">
 
-        <!-- Load icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <title>King County Prosecuting Attorney - King County</title>
-    
-        <!-- Bootstrap core CSS -->
-        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Load icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Google fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet"> 
+  <title>King County Prosecuting Attorney - King County</title>
 
-        <!-- Link style.css -->
-        <link href="style.css" rel="stylesheet">
-        
-        
+  <!-- Bootstrap core CSS -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <!-- Link style.css -->
+  <link href="style.css" rel="stylesheet">
+
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
 
-          <a class="navbar-brand" href="#"><img src="media/KC_LONG.jpg" class="homelogo" height="50px" width="238px"></a>
-          
-          
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"><i class="fa fa-home"></i>Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">How to...</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Protection Orders</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Child &amp; Family Support</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Divisions</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Civil Division</a>
-                    <a class="dropdown-item" href="#">Criminal Division</a>
-                </div>
-              </li>
-              
-              <li class="nav-item">
-                  <div id="custom-search-input">
-                    <form class="form-inline">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search kingcounty.gov..." aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-              </li>
-            </ul>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+      <!-- insert sidebar here -->
+
+      <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
           </div>
         </div>
-      </nav>
-      <!-- nav end -->
+
+      <!-- end of sidebar -->
+
+      <button type="button" id="sidemenu-btn" class="btn btn-info" onclick="openNav()"><i class="fa fa-align-left"></i></button>
+
+      <a class="navbar-brand" href="#"><img src="media/KC_LONG.jpg" class="homelogo" height="50px" width="245px"></a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+  
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><i class="fa fa-home"></i>Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">How to...</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Protection Orders</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Divisions</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Civil Division</a>
+              <a class="dropdown-item" href="#">Criminal Division</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div id="custom-search-input">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search kingcounty.gov..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-language"></i> English</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Español</a>
+              <a class="dropdown-item" href="#">Français</a>
+              <a class="dropdown-item" href="#">官话</a>
+              <a class="dropdown-item" href="#">日本語</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
   <br>
 
-      <!-- Page Content -->
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-          <header class="frontpage-header" role="banner">
-              <h1 class="mt-5">Prosecuting Attorney</h1>
-            </header>
-        </div>
-</div>
+  <!-- Page Content -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <header class="frontpage-header" role="banner">
+        <center>
+          <h1 class="display-3">Prosecuting Attorney</h1>
+          <h6 class="lead">Judicial representatives of King County court systems.</h6>
+        </center>
+      </header>
+    </div>
+  </div>
   <div class="container">
 
-  <!--Each heading will be a link too-->
+    <!--Each heading will be a link too-->
     <div class="row">
-        <!--col-lg-12 text-center-->
-        <div class="col-lg-12">
-          <div class="card-body">
-            <h2 class="card-header"><a href="#">News/Media</a></h2>
-              <div id="carouselNewsMedia" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
+      <!--col-lg-12 text-center-->
+      <div class="col-lg-12">
+        <div class="card-body">
+          <h2 class="card-header"><a href="#">News/Media</a></h2>
+          <div id="carouselNewsMedia" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
 
-                  <div class="carousel-item active">
-                    <a href="#"><img class="d-block img-fluid" src="media/hearing_case.jpg" alt="First slide">
+              <div class="carousel-item active">
+                <a href="#"><img class="d-block img-fluid" src="media/hearing_case.jpg" alt="First slide">
                     
                     <div class="carousel-caption d-none d-md-block">
                         <h3>News Releases From The Prosecuting Attorney</h3>
                         <p>Read the verdicts &amp; sentences for the latest cases.</p>
                     </div>
                   </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://www.youtube.com/watch?v=_nybqFosTp8"><img class="d-block img-fluid" src="media/youth_program2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.youtube.com/watch?v=_nybqFosTp8"><img class="d-block img-fluid" src="media/youth_program2.jpg" alt="Second slide">
                   <!--<iframe class="embed-responsive" width="672" height="380"  src="https://www.youtube.com/embed/4ISVuExSN0A" frameborder="0" allowfullscreen></iframe>-->
                       <div class="carousel-caption d-none d-md-block">
                           <h3>Watch: Creative Justice-4Culture</h3>
                           <p>A new arts-based alternative to incarceration for young people in King County.</p>
                       </div>
                     </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://www.youtube.com/watch?v=iuZ-iZyVx48"><img class="d-block img-fluid" src="media/pao_values.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.youtube.com/watch?v=iuZ-iZyVx48"><img class="d-block img-fluid" src="media/pao_values.jpg" alt="Third slide">
                   <!--<iframe class="embed-responsive" width="672" height="380"  src="https://www.youtube.com/embed/4ISVuExSN0A" frameborder="0" allowfullscreen></iframe>-->
                       <div class="carousel-caption d-none d-md-block">
                           <h3>Watch: PAO Values</h3>
                           <p>A video mission statement of the King County Prosecuting Attorney's Office.</p>
                       </div>
                     </a>
-                  </div>
-                  <div class="carousel-item">
-                      <a href="https://www.youtube.com/watch?v=zqzFp5C_FCg"><img class="d-block img-fluid" src="media/discourse.jpg" alt="Fourth slide">
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.youtube.com/watch?v=zqzFp5C_FCg"><img class="d-block img-fluid" src="media/discourse.jpg" alt="Fourth slide">
                     <!--<iframe class="embed-responsive" width="672" height="380"  src="https://www.youtube.com/embed/4ISVuExSN0A" frameborder="0" allowfullscreen></iframe>-->
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Watch: What does justice mean to you?</h3>
                             <p>Prosecuting Attorney's State of the Office Discourse.</p>
                         </div>
                       </a>
-                    </div>
-                  <a class="carousel-control-prev" href="#carouselNewsMedia" role="button" data-slide="prev">
+              </div>
+              <a class="carousel-control-prev" href="#carouselNewsMedia" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselNewsMedia" role="button" data-slide="next">
+              <a class="carousel-control-next" href="#carouselNewsMedia" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
-              </div>
             </div>
           </div>
         </div>
-          
-          <div class="col-lg-12">
-              <div class="card-body">
-                <h2 class="card-header"><a href="#">Careers</a></h2>
-                <div id="carouselJobs" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-    
-                      <div class="carousel-item active">
-                        <a href="#"><img class="d-block img-fluid" src="media/jobs_banner.png" alt="First slide">
+      </div>
+
+      <div class="col-lg-12">
+        <div class="card-body">
+          <h2 class="card-header"><a href="#">Careers</a></h2>
+          <div id="carouselJobs" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active">
+                <a href="#"><img class="d-block img-fluid" src="media/jobs_banner.png" alt="First slide">
                         
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Jobs, Volunteering, and Internships available</h3>
@@ -162,58 +192,58 @@
                             <p>Volunteer opportunities within the Domestic Violence Unit.</p>
                         </div>
                       </a>
-                      </div>
-                      
-                    </div>
-                </div>
               </div>
-          </div>
 
-          <div class="col-lg-12">
-              <div class="card-body">
-                <h2 class="card-header"><a href="#">Community Engagements</h2></a>
-                <div id="carouselCommunity" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-    
-                      <div class="carousel-item active">
-                        <a href="#"><img class="d-block img-fluid" src="media/comm_1.jpg" alt="First slide">
-                        
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Victim Assitance, Restitution, Translator/Interpretor Services</h3>
-                            <p>Responding to the needs of crime victims and witnesses.</p>
-                            <p>Resources for domestic violence, and victim assistance.</p>
-                        </div>
-                      </a>
-                      </div>
-                      <div class="carousel-item">
-                          <a href="#"><img class="d-block img-fluid" src="media/comm_2_1.png" alt="Second slide">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="card-body">
+          <h2 class="card-header"><a href="#">Community Engagements</h2></a>
+            <div id="carouselCommunity" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item active">
+                  <img class="d-block img-fluid" src="media/comm_1.jpg" alt="First slide">
+
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Victim Assitance, Restitution, Translator/Interpretor Services</h3>
+                    <p>Responding to the needs of crime victims and witnesses.</p>
+                    <p>Resources for <a href="#">domestic violence</a>, <a href="#">elder abuse</a>, and <a href="#">victim assistance.</a></p>
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+                  <a href="#"><img class="d-block img-fluid" src="media/comm_2_1.png" alt="Second slide">
                         <!--<iframe class="embed-responsive" width="672" height="380"  src="https://www.youtube.com/embed/4ISVuExSN0A" frameborder="0" allowfullscreen></iframe>-->
                             <div class="carousel-caption d-none d-md-block">
                                 <h3>Child and Family Support</h3>
-                                <p>Financial support, employment services, establishing paternity</p>
+                                <p>Financial support, employment services, establishing paternity, and child support resources.</p>
                                 <p>Assistance for the elderly, family self suffiency, and promoting the well being of children.</p>
                             </div>
                           </a>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselCommunity" role="button" data-slide="prev">
+                </div>
+                <a class="carousel-control-prev" href="#carouselCommunity" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                           </a>
-                          <a class="carousel-control-next" href="#carouselCommunity" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselCommunity" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                           </a>
-                    </div>
-                  </div>
-          </div>
-          <br>
-      <div class="col-lg-12">
-
-        <div class="card-header">
-
-          <h2>Recent Cases</h2>
-
+              </div>
+            </div>
         </div>
+        <br>
+        <div class="col-lg-12">
+
+          <div class="card-header">
+
+            <h2>Recent Cases</h2>
+
+          </div>
           <!-- recent cases (docket) put it in a card ? -->
           <div class="half">
 
@@ -222,9 +252,13 @@
               <label for="tab-one">January 8, 2018 </label>
               <div class="tab-content">
                 <p>
-                    On Friday criminal manslaughter charges were filed against Phillip Numrich, owner of Alki Construction. The charges were made in connection with the death of Harold Felton, an Alki Construction employee, killed as he was working in a trench on a job site in West Seattle on or about January 26, 2016. 
-                    
-                    “We alleged that the defendant’s criminal negligence caused Harold Felton’s death,” said Mindy Young, senior deputy prosecuting attorney for the King County Prosecuting Attorney’s office. “The evidence shows an extraordinary level of negligence surrounding this dangerous worksite." The defendant's bail is set at $20,000. Numrich will be arraigned on January 18, 2018 in King County Superior Court at 8:30 a.m.
+                  On Friday criminal manslaughter charges were filed against Phillip Numrich, owner of Alki Construction. The charges were
+                  made in connection with the death of Harold Felton, an Alki Construction employee, killed as he was working
+                  in a trench on a job site in West Seattle on or about January 26, 2016. “We alleged that the defendant’s
+                  criminal negligence caused Harold Felton’s death,” said Mindy Young, senior deputy prosecuting attorney
+                  for the King County Prosecuting Attorney’s office. “The evidence shows an extraordinary level of negligence
+                  surrounding this dangerous worksite." The defendant's bail is set at $20,000. Numrich will be arraigned
+                  on January 18, 2018 in King County Superior Court at 8:30 a.m.
                 </p>
               </div>
             </div>
@@ -233,10 +267,14 @@
               <label for="tab-two">November 16</label>
               <div class="tab-content">
                 <p>
-                    Sentencing is scheduled for November 17 for a Kent man who was convicted in a fatal shooting outside an Auburn bar in 2013. 
-                    A jury last month found the defendant, Cleanthony Jimerson, 32, guilty of two counts of Murder in the Second Degree with firearms enhancements and one count of Unlawful Possession of a Firearm in the Second Degree in connection with the fatal shooting of Nicholas J. Lindsay, 26, and Lorenzo D. Duncan, 23. 
-                    The shooting occurred during a fight outside the bar on March 31, 2013.  Jimerson will be sentenced tomorrow at 10 a.m. before Judge Janet Helson in courtroom 3H of the Maleng Regional Justice Center. The defendant faces a sentence range of 387 to 584 months in prison, which includes the firearm enhancements. 
-                    The case was handled by Senior Deputy Prosecutors Jessica Berliner and Dan Soukup.                      
+                  Sentencing is scheduled for November 17 for a Kent man who was convicted in a fatal shooting outside an Auburn bar in 2013.
+                  A jury last month found the defendant, Cleanthony Jimerson, 32, guilty of two counts of Murder in the Second
+                  Degree with firearms enhancements and one count of Unlawful Possession of a Firearm in the Second Degree
+                  in connection with the fatal shooting of Nicholas J. Lindsay, 26, and Lorenzo D. Duncan, 23. The shooting
+                  occurred during a fight outside the bar on March 31, 2013. Jimerson will be sentenced tomorrow at 10 a.m.
+                  before Judge Janet Helson in courtroom 3H of the Maleng Regional Justice Center. The defendant faces a
+                  sentence range of 387 to 584 months in prison, which includes the firearm enhancements. The case was handled
+                  by Senior Deputy Prosecutors Jessica Berliner and Dan Soukup.
                 </p>
               </div>
             </div>
@@ -245,231 +283,282 @@
               <label for="tab-three">November 3</label>
               <div class="tab-content">
                 <p>
-                    Arraignment was held this morning for three teens charged in connection with the fatal stabbing of a 15-year-old boy in West Seattle on September 5, 2016. 
-                    The defendants, Jonatan Islas-Martinez, 18, Elizabeth Cabrera-Aparicio, 17, and Diego Carballo-Oliveros, 16, were arraigned and pled not guilty to a charge of Murder in the First Degree for the murder of Derek Juarez-Lopez. 
-                  The 16 and 17 year-old defendants are charged as adults under Washington State’s adult jurisdiction law, which allows for prosecution in adult court for 16 and 17-year-old juveniles who are accused of serious, violent offenses. 
-                  All three remain in custody with bail set at $1 million. The Court scheduled a case setting hearing for November 15 at 1 p.m. in 1201 of the King County Courthouse. 
+                  Arraignment was held this morning for three teens charged in connection with the fatal stabbing of a 15-year-old boy in West
+                  Seattle on September 5, 2016. The defendants, Jonatan Islas-Martinez, 18, Elizabeth Cabrera-Aparicio, 17,
+                  and Diego Carballo-Oliveros, 16, were arraigned and pled not guilty to a charge of Murder in the First
+                  Degree for the murder of Derek Juarez-Lopez. The 16 and 17 year-old defendants are charged as adults under
+                  Washington State’s adult jurisdiction law, which allows for prosecution in adult court for 16 and 17-year-old
+                  juveniles who are accused of serious, violent offenses. All three remain in custody with bail set at $1
+                  million. The Court scheduled a case setting hearing for November 15 at 1 p.m. in 1201 of the King County
+                  Courthouse.
                 </p>
               </div>
             </div>
             <div class="tab">
-                <input id="tab-four" type="checkbox" name="tabs">
-                <label for="tab-four">October 26</label>
-                <div class="tab-content">
-                  
-                      <ol><li>Charges were filed yesterday against a 17-year-old boy who is accused in a fatal stabbing in Auburn on October 22. 
-                      The defendant, Austin Glore, is charged as an adult with Murder in the Second Degree for the alleged murder of Bryce Pearson, 35. 
-                      A 20-year-old co-defendant, Michael Sample, is charged with Rendering Criminal Assistance in the Second Degree for allegedly allowing Glore into his vehicle and then driving him away from the scene. 
-                      The defendants remain in custody. The Court set bail at $1 million for Glore and $100,000 for Sample. 
-                      Both defendants will be arraigned on November 6 at 9 a.m. in courtroom GA of the Maleng Regional Justice Center.
-                  </li><br/><hr><li>
-                      Charges of Murder in the First Degree and Unlawful Possession of a Firearm in the Second Degree were filed on Monday against Samuel R. Stills, 52, who is accused in the fatal shooting of his wife, Shinelle Stills, on October 20 in SeaTac. 
-                      The defendant allegedly shot the victim and then turned the gun on himself. 
-                      The defendant currently remains in the hospital. 
-                      After he’s released, the defendant will be booked into the King County Jail. 
-                      Arraignment is currently scheduled for November 6 at 8:30 a.m. in courtroom 1201 of the King County Courthouse. 
-                      The defendant’s bail is set at $2 million.  </li>
-                      </ol>
-                </div>
-              </div>
-              <div class="tab">
-                  <input id="tab-five" type="checkbox" name="tabs">
-                  <label for="tab-five">October 20</label>
-                  <div class="tab-content">
-                    <ol>
-                      <li>Alexander Joachin, 17, was sentenced this afternoon to 150 months in prison for a fatal shooting in Auburn on October 7, 2016. 
-                          The defendant ran up to the victim, Erick Valdez-Herrera, 17, and shot him multiple times. 
-                          The victim was unarmed and sitting in his car at the time he was murdered. 
-                          The defendant pled guilty last month to Murder in the Second Degree. 
-                          Joachin, who was 16 at the time, was charged as an adult under Washington State's automatic adult jurisdiction law, which allows for prosecution in adult court for 16 and 17-year-olds who are accused of serious, violent offenses. 
-                          Today’s sentencing was before Judge Elizabeth Berns at the Maleng Regional Justice Center. 
-                          The case was handled by Senior Deputy Prosecutor Mary Barbosa. </li>
-                      <br/><hr>
-                      <li>Kenneth Bernard Jones, Jr., was sentenced this afternoon to 240 months in prison for a fatal shooting on September 24, 2014 at 2nd and Yesler in Seattle. 
-                          The defendant shot the victim, Melvin Dees, and then fled the scene. 
-                          Jones, 22, pled guilty last month to a charge of Murder in the First Degree. 
-                          Today’s sentencing was before Judge Lori Kay Smith at the King County Courthouse. 
-                          The case was handled by Senior Deputy Prosecutor Adrienne McCoy.</li>
-                      <br/><hr>
-                      <li>Today's sentencing has been continued to January 12 for a 28-year-old man who pled guilty to a charge of Murder in the Second Degree with a deadly weapon for the fatal stabbing of a 21-year-old man in Auburn on February 18, 2016. 
-                          The defendant, Fritz K. Ratcliffe, was arguing with his girlfriend and then fatally stabbed the woman’s son, Jaseree Fountain, who had tried to help his mother. 
-                          Ratcliffe faces a sentence range of 158 to 258 months in prison. 
-                          The January 12 sentencing is set for at 1:30 p.m. before Judge Cheryl Carey in courtroom 3F of the Maleng Regional Justice Center. 
-                          The case is being handled by Senior Deputy Prosecutor Mary Barbosa.</li>
-                    </ol>
-                  </div>
-                </div>
-          </div>
-      </div>
-      <br>
-      <br>
-          <!-- profiles section -->
-          <div class="col-lg-12">
-            <div class="card-header">
-            <a href="#"><h2>Meet the Team</h2></a>
-            </div>
-            <div class="card-group">
-                
-                   <div class="card">
-               <!-- set a width on the image otherwise it will expand to full width       -->
-                     <img class="card-img-top img-fluid" src="media/satterberg-nojacket.jpg" alt="Card image cap" width="400">
-                     <div class="card-body">
-                       <h4 class="card-title">Dan Satterberg</h4>
-                       <p class="card-text">Dan Satterberg was elected King County Prosecuting Attorney in November 2007 to succeed his longtime friend and mentor, the late Norm Maleng. He was re-elected in 2010 without opposition.</p>
-                       
-                      </div>
-                      <div class="card-footer"><a href="#">Read More</a></div>
-                   </div>
-                   <!-- /.card -->
-                 
-                     <div class="card">
-               <!-- set a width on the image otherwise it will expand to full width       -->
-                     <img class="card-img-top img-fluid" src="media/rajul.jpg" alt="Card image cap" width="400">
-                     <div class="card-body">
-                       <h4 class="card-title">Mafe Rajul</h4>
-                       <p class="card-text">Rajul works in the economic crimes unit of the King County Prosecutor’s office. She respects the system that presumes a defendant’s innocence and protects individual rights. But she is also an advocate for victims of crime.</p>
-                       
-                      </div>
-                      <div class="card-footer"><a href="#">Read More</a></div>
-                   </div>
-                   <!-- /.card -->
-                 
-                     <div class="card">
-               <!-- set a width on the image otherwise it will expand to full width       -->
-                     <img class="card-img-top img-fluid" src="media/simmons.jpg" alt="Card image cap" width="400">
-                     <div class="card-body">
-                       <h4 class="card-title">Jason Simmons</h4>
-                       <p class="card-text">Justice for marginalized victims, a prosecutor who routinely raises his hand for the homeless cases that come into the King County Prosecuting Attorney’s office. </p>
-                       
-                      </div>
-                      <div class="card-footer"><a href="#">Read More</a></div>
-                   </div>
-                   <!-- /.card -->
-                   
-                       <div class="card">
-               <!-- set a width on the image otherwise it will expand to full width       -->
-                     <img class="card-img-top img-fluid" src="media/froh.jpg" alt="Card image cap" width="400">
-                     <div class="card-body">
-                       <h4 class="card-title">Amanda Froh</h4>
-                       <p class="card-text"> A senior deputy prosecutor who specializes in elder abuse and economic fraud cases. “People who commit crimes against the elderly should be held accountable, and justice should be sought for these victims.”</p>
-                       
-                     </div>
-                     <div class="card-footer"><a href="#">Read More</a></div>
-                   </div>
-                   <!-- /.card -->
-                   
-               
-               </div>
-               <!-- /.card-group -->
-          </div>
-          <!-- end of profiles -->
+              <input id="tab-four" type="checkbox" name="tabs">
+              <label for="tab-four">October 26</label>
+              <div class="tab-content">
 
+                <ol>
+                  <li>Charges were filed yesterday against a 17-year-old boy who is accused in a fatal stabbing in Auburn on
+                    October 22. The defendant, Austin Glore, is charged as an adult with Murder in the Second Degree for
+                    the alleged murder of Bryce Pearson, 35. A 20-year-old co-defendant, Michael Sample, is charged with
+                    Rendering Criminal Assistance in the Second Degree for allegedly allowing Glore into his vehicle and
+                    then driving him away from the scene. The defendants remain in custody. The Court set bail at $1 million
+                    for Glore and $100,000 for Sample. Both defendants will be arraigned on November 6 at 9 a.m. in courtroom
+                    GA of the Maleng Regional Justice Center.
+                  </li><br/>
+                  <hr>
+                  <li>
+                    Charges of Murder in the First Degree and Unlawful Possession of a Firearm in the Second Degree were filed on Monday against
+                    Samuel R. Stills, 52, who is accused in the fatal shooting of his wife, Shinelle Stills, on October 20
+                    in SeaTac. The defendant allegedly shot the victim and then turned the gun on himself. The defendant
+                    currently remains in the hospital. After he’s released, the defendant will be booked into the King County
+                    Jail. Arraignment is currently scheduled for November 6 at 8:30 a.m. in courtroom 1201 of the King County
+                    Courthouse. The defendant’s bail is set at $2 million. </li>
+                </ol>
+              </div>
+            </div>
+            <div class="tab">
+              <input id="tab-five" type="checkbox" name="tabs">
+              <label for="tab-five">October 20</label>
+              <div class="tab-content">
+                <ol>
+                  <li>Alexander Joachin, 17, was sentenced this afternoon to 150 months in prison for a fatal shooting in Auburn
+                    on October 7, 2016. The defendant ran up to the victim, Erick Valdez-Herrera, 17, and shot him multiple
+                    times. The victim was unarmed and sitting in his car at the time he was murdered. The defendant pled
+                    guilty last month to Murder in the Second Degree. Joachin, who was 16 at the time, was charged as an
+                    adult under Washington State's automatic adult jurisdiction law, which allows for prosecution in adult
+                    court for 16 and 17-year-olds who are accused of serious, violent offenses. Today’s sentencing was before
+                    Judge Elizabeth Berns at the Maleng Regional Justice Center. The case was handled by Senior Deputy Prosecutor
+                    Mary Barbosa. </li>
+                  <br/>
+                  <hr>
+                  <li>Kenneth Bernard Jones, Jr., was sentenced this afternoon to 240 months in prison for a fatal shooting on
+                    September 24, 2014 at 2nd and Yesler in Seattle. The defendant shot the victim, Melvin Dees, and then
+                    fled the scene. Jones, 22, pled guilty last month to a charge of Murder in the First Degree. Today’s
+                    sentencing was before Judge Lori Kay Smith at the King County Courthouse. The case was handled by Senior
+                    Deputy Prosecutor Adrienne McCoy.</li>
+                  <br/>
+                  <hr>
+                  <li>Today's sentencing has been continued to January 12 for a 28-year-old man who pled guilty to a charge of
+                    Murder in the Second Degree with a deadly weapon for the fatal stabbing of a 21-year-old man in Auburn
+                    on February 18, 2016. The defendant, Fritz K. Ratcliffe, was arguing with his girlfriend and then fatally
+                    stabbed the woman’s son, Jaseree Fountain, who had tried to help his mother. Ratcliffe faces a sentence
+                    range of 158 to 258 months in prison. The January 12 sentencing is set for at 1:30 p.m. before Judge
+                    Cheryl Carey in courtroom 3F of the Maleng Regional Justice Center. The case is being handled by Senior
+                    Deputy Prosecutor Mary Barbosa.</li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
+        <br>
+        <br>
+        <!-- profiles section -->
+        <div class="col-lg-12">
+          <div class="card-header">
+            <a href="#">
+              <h2>Meet the Team</h2>
+            </a>
+          </div>
+          <div class="card-group">
 
+            <div class="card">
+              <!-- set a width on the image otherwise it will expand to full width       -->
+              <img class="card-img-top img-fluid" src="media/satterberg-nojacket.jpg" alt="Card image cap" width="400">
+              <div class="card-body">
+                <h4 class="card-title">Dan Satterberg</h4>
+                <p class="card-text">Dan Satterberg was elected King County Prosecuting Attorney in November 2007 to succeed his longtime friend
+                  and mentor, the late Norm Maleng. He was re-elected in 2010 without opposition.</p>
+
+              </div>
+              <div class="card-footer"><a href="#">Read More</a></div>
+            </div>
+            <!-- /.card -->
+
+            <div class="card">
+              <!-- set a width on the image otherwise it will expand to full width       -->
+              <img class="card-img-top img-fluid" src="media/rajul.jpg" alt="Card image cap" width="400">
+              <div class="card-body">
+                <h4 class="card-title">Mafe Rajul</h4>
+                <p class="card-text">Rajul works in the economic crimes unit of the King County Prosecutor’s office. She respects the system that
+                  presumes a defendant’s innocence and protects individual rights. But she is also an advocate for victims
+                  of crime.</p>
+
+              </div>
+              <div class="card-footer"><a href="#">Read More</a></div>
+            </div>
+            <!-- /.card -->
+
+            <div class="card">
+              <!-- set a width on the image otherwise it will expand to full width       -->
+              <img class="card-img-top img-fluid" src="media/simmons.jpg" alt="Card image cap" width="400">
+              <div class="card-body">
+                <h4 class="card-title">Jason Simmons</h4>
+                <p class="card-text">Justice for marginalized victims, a prosecutor who routinely raises his hand for the homeless cases that
+                  come into the King County Prosecuting Attorney’s office. </p>
+
+              </div>
+              <div class="card-footer"><a href="#">Read More</a></div>
+            </div>
+            <!-- /.card -->
+
+            <div class="card">
+              <!-- set a width on the image otherwise it will expand to full width       -->
+              <img class="card-img-top img-fluid" src="media/froh.jpg" alt="Card image cap" width="400">
+              <div class="card-body">
+                <h4 class="card-title">Amanda Froh</h4>
+                <p class="card-text"> A senior deputy prosecutor who specializes in elder abuse and economic fraud cases. “People who commit crimes
+                  against the elderly should be held accountable, and justice should be sought for these victims.”</p>
+
+              </div>
+              <div class="card-footer"><a href="#">Read More</a></div>
+            </div>
+            <!-- /.card -->
+
+
+          </div>
+          <!-- /.card-group -->
+        </div>
+        <!-- end of profiles -->
+
+      </div>
     </div>
 
+  </div>
+
+  <br>
 
 
- <br>
+  <!-- Footer -->
+  <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4">
 
-    
-<!-- Footer -->
-<footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4">
-    
-      <!-- Footer Links -->
-      <div class="container text-center text-md-left">
-    
-        <!-- Grid row -->
-        <div class="row">
-    
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-    
-            <!-- Content -->
-            <h5 class="font-weight-bold text-uppercase mb-4">Subscribe to our Newsletter</h5>
-            <p><i>The Prosecutor's Post</i></p>
-            <form class="form-inline" id="newsletter">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Subscribe to our Newsletter</h5>
+          <p><i>The Prosecutor's Post</i></p>
+          <form class="form-inline" id="newsletter">
             <input type="text" placeholder="youremail@domain.com" name="mail" required>
             <input type="submit" id="newsletterBtn" value="Subscribe">
-            </form>
-          </div>
-          <!-- Grid column -->
-    
-          <hr class="clearfix w-100 d-md-none">
-    
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-    
-            <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mb-4">King County</h5>
-    
-            <ul class="list-unstyled">
-              <li><p><a href="#!">DEPARTMENTS</a></p></li>
-              <li><p><a href="#!">ABOUT US</a></p></li>
-              <li><p><a href="#!">SERVICES</a></p></li>
-              <li><p><a href="#!">HOW DO I...</a></p></li>
-              <li><p><a href="#!">CONTACT US</a></p></li>
-            </ul>
-    
-          </div>
-          <!-- Grid column -->
-    
-          <hr class="clearfix w-100 d-md-none">
-    
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-    
-            <!-- Contact details -->
-            <h5 class="font-weight-bold text-uppercase mb-4">Prosecuting Attorney's Office</h5>
-    
-            <ul class="list-unstyled">
-              <li><p><i class="fa fa-home mr-3"></i>King County Courthouse</p></li>
-              <li><p style="text-indent: 30px"><i></i>516 Third Avenue, W400</p></li>
-              <li><p style="text-indent: 30px"><i></i>Seattle, WA 98104 </p></li>
-              <li><p><i class="fa fa-clock-o mr-3"></i>M-F: 8:30 a.m. - 4:30 p.m. </p></li>
-              <li><p><i class="fa fa-phone mr-3"></i>206-477-1200</p></li>
-            </ul>
-    
-          </div>
-          <!-- Grid column -->
-    
-          <hr class="clearfix w-100 d-md-none">
-    
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-    
-            <!-- Social buttons -->
-            <h5 class="font-weight-bold text-uppercase mb-4">Connect</h5>
-    
-            <!-- Facebook -->
-            <a type="button" class="btn-floating btn-fb"><i class="fa fa-facebook"></i></a>
-            <!-- Twitter -->
-            <a type="button" class="btn-floating btn-tw"><i class="fa fa-twitter"></i></a>
-            <!-- Email +-->
-            <a type="button" class="btn-floating btn-envelope"><i class="fa fa-envelope"></i></a>
-    
-          </div>
-          <!-- Grid column -->
-    
+          </form>
         </div>
-        <!-- Grid row -->
-    
-      </div>
-      <!-- Footer Links -->
-    
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">King County © 2018:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> kingcounty.gov</a>
-      </div>
-      <!-- Copyright -->
-    
-    </footer>
-    <!-- Footer -->
-                          
+        <!-- Grid column -->
 
-          <!-- Bootstrap core JavaScript -->
-          <script src="node_modules/jquery/dist/jquery.min.js"></script>
-          <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">King County</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><a href="#!">DEPARTMENTS</a></p>
+            </li>
+            <li>
+              <p><a href="#!">ABOUT US</a></p>
+            </li>
+            <li>
+              <p><a href="#!">SERVICES</a></p>
+            </li>
+            <li>
+              <p><a href="#!">HOW DO I...</a></p>
+            </li>
+            <li>
+              <p><a href="#!">CONTACT US</a></p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Prosecuting Attorney's Office</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fa fa-home mr-3"></i>King County Courthouse</p>
+            </li>
+            <li>
+              <p style="text-indent: 30px"><i></i>516 Third Avenue, W400</p>
+            </li>
+            <li>
+              <p style="text-indent: 30px"><i></i>Seattle, WA 98104 </p>
+            </li>
+            <li>
+              <p><i class="fa fa-clock-o mr-3"></i>M-F: 8:30 a.m. - 4:30 p.m. </p>
+            </li>
+            <li>
+              <p><i class="fa fa-phone mr-3"></i>206-477-1200</p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Connect</h5>
+
+          <!-- Facebook -->
+          <a type="button" class="btn-floating btn-fb"><i class="fa fa-facebook"></i></a>
+          <!-- Twitter -->
+          <a type="button" class="btn-floating btn-tw"><i class="fa fa-twitter"></i></a>
+          <!-- Email +-->
+          <a type="button" class="btn-floating btn-envelope"><i class="fa fa-envelope"></i></a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">King County © 2018:
+      <a href="#" style="color:beige"> kingcounty.gov</a> │
+      <a href="#" style="color:beige">Privacy</a> •
+      <a href="#" style="color:beige">Accessibility</a> •
+      <a href="#" style="color:beige">Terms of use</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+      function openNav() {
+          document.getElementById("myNav").style.width = "25%";
+      }
+      
+      function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+      }
+  </script>
 </body>
+
 </html>
