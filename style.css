@@ -29,9 +29,10 @@ body {
 }
 .frontpage-header
 {
-    margin: 8px -15px 0px 0px;
+    
     font-family: 'IM Fell French Canon', sans-serif;
     background: rgba(255, 255, 255, 0.75);
+    margin: auto;
 }
 .header-caption{
     font-family: 'IM Fell French Canon', sans-serif;
@@ -40,15 +41,6 @@ h2{
     font-family: 'Libre Baskerville', sans-serif;
 }
 
-/*right side bar of widgets*/
-#social-media-links{
-    margin: auto;
-}
-.panel-heading{
-    background-color: black;
-    color: white;
-    border-bottom: 10px solid lightblue;
-}
 /*social media icons*/
 
 #social-media-links ul{
@@ -68,7 +60,7 @@ h2{
 
 /* Facebook */
 .fa-facebook {
-    background: #3B5998;
+    background: #0277bd;
     color: white;
     padding: 20px;
     font-size: 30px;
@@ -80,7 +72,7 @@ h2{
 
 /* Twitter */
 .fa-twitter {
-    background: #3B5998;
+    background: #0277bd;
     color: white;
     padding: 20px;
     font-size: 30px;
@@ -91,7 +83,7 @@ h2{
 }
 
 .fa-linkedin{
-    background: #3B5998;
+    background: #0277bd;
     color: white;
     padding: 20px;
     font-size: 30px;
@@ -100,16 +92,7 @@ h2{
     text-align: center;
     text-decoration: none;
 }
-.fa-envelope{
-    background: #3B5998;
-    color: white;
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-}
+
 /*media carousel styles*/
 .carousel-inner{
     width:100%;
@@ -131,12 +114,6 @@ h2{
 footer{
     background-color: black;
     color: white;
-}
-
-#newsletterBtn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
 }
 
 /* accordion, for the docket*/

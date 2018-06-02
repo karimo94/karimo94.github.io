@@ -35,7 +35,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-
+      
       <a class="navbar-brand" href="#"><img src="media/KC_LONG.jpg" class="homelogo" height="50px" width="245px"></a>
 
 
@@ -59,18 +59,26 @@
             <a class="nav-link" href="#">Protection Orders</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Divisions</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Civil Division</a>
               <a class="dropdown-item" href="#">Criminal Division</a>
+              <a class="dropdown-item" href="#">Youth Programs</a>
+              <a class="dropdown-item" href="#">Child &amp; Family Support</a>
+              <a class="dropdown-item" href="#">Community &amp; Speaking</a>
+              <a class="dropdown-item" href="#">Jobs</a>
+              <a class="dropdown-item" href="#">News &amp; Media</a>
+              <a class="dropdown-item" href="#">Attorney Profiles</a>
             </div>
           </li>
-
+          <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
           <li class="nav-item">
             <div id="custom-search-input">
               <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search kingcounty.gov..." aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-info" type="submit"><i class="fa fa-search"></i></button>
               </form>
             </div>
           </li>
@@ -430,8 +438,15 @@
           <h5 class="font-weight-bold text-uppercase mb-4">Subscribe to our Newsletter</h5>
           <p><i>The Prosecutor's Post</i></p>
           <form class="form-inline" id="newsletter">
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="abc@domain.com" aria-label="Email" id="emailSubscribe" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-info" type="button">Subscribe</button>
+                  </div>
+                </div>
+                <!--
             <input type="text" placeholder="youremail@domain.com" name="mail" required>
-            <input type="submit" id="newsletterBtn" value="Subscribe">
+            <button type="button" class="btn btn-info" id="newsletterBtn">Subscribe</button>-->
           </form>
         </div>
         <!-- Grid column -->
@@ -487,7 +502,7 @@
               <p><i class="fa fa-clock-o mr-3"></i>M-F: 8:30 a.m. - 4:30 p.m. </p>
             </li>
             <li>
-              <p><i class="fa fa-phone mr-3"></i>206-477-1200</p>
+              <p><i class="fa fa-envelope mr-3"></i>Email: <a href="mailto:Prosecuting.attorney@kingcounty.gov">Prosecuting Attorney</a></p>
             </li>
           </ul>
 
@@ -506,8 +521,9 @@
           <a type="button" class="btn-floating btn-fb"><i class="fa fa-facebook"></i></a>
           <!-- Twitter -->
           <a type="button" class="btn-floating btn-tw"><i class="fa fa-twitter"></i></a>
-          <!-- Email +-->
-          <a type="button" class="btn-floating btn-envelope"><i class="fa fa-envelope"></i></a>
+          <!-- LinkedIn -->
+          <a type="button" class="btn-floating btn-tw"><i class="fa fa-linkedin"></i></a>
+          
 
         </div>
         <!-- Grid column -->
@@ -538,7 +554,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/sidebar.js"></script>
 
 </body>
 
