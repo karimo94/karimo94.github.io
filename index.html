@@ -49,17 +49,18 @@
         </div>
 
       <!-- end of sidebar -->
-
-      <button type="button" id="sidemenu-btn" class="btn btn-info" onclick="openNav()"><i class="fa fa-align-left"></i></button>
+      <!-- sidebar menu button 
+      <button type="button" id="sidemenu-btn" class="btn btn-info" onclick="openNav()"><i class="fa fa-align-left"></i></button>-->
 
       <a class="navbar-brand" href="#"><img src="media/KC_LONG.jpg" class="homelogo" height="50px" width="245px"></a>
 
-
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
   
       <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -111,7 +112,7 @@
       <header class="frontpage-header" role="banner">
         <center>
           <h1 class="display-3">Prosecuting Attorney</h1>
-          <h6 class="lead">Judicial representatives of King County court systems.</h6>
+          <h6 class="lead">Judicial representatives of King County court system.</h6>
         </center>
       </header>
     </div>
@@ -425,11 +426,9 @@
 
       </div>
     </div>
-
   </div>
 
   <br>
-
 
   <!-- Footer -->
   <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4">
@@ -536,13 +535,18 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">King County © 2018:
-      <a href="#" style="color:beige"> kingcounty.gov</a> │
-      <a href="#" style="color:beige">Privacy</a> •
+    <div class="footer-copyright text-center" style="padding-left:5px">
+      King County © 2018
+      <div class="text-center">
+      <a href="#" class="text-md-right" style="color:beige">Privacy</a> •
       <a href="#" style="color:beige">Accessibility</a> •
       <a href="#" style="color:beige">Terms of use</a>
+      </div>
     </div>
     <!-- Copyright -->
+    <!-- Privacy Policy -->
+    
+    <!-- Privacy Policy -->
 
   </footer>
   <!-- Footer -->
@@ -550,15 +554,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-      function openNav() {
-          document.getElementById("myNav").style.width = "25%";
-      }
-      
-      function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-      }
-  </script>
+  <script src="js/sidebar.js"></script>
+
 </body>
 
 </html>
