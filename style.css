@@ -26,6 +26,7 @@ body {
 .homelogo
 {
     position: relative;
+    margin-top: -10px;
 }
 .frontpage-header
 {
