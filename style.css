@@ -259,3 +259,21 @@ footer {
     background-color: #071527;
     color: white;
 }
+
+.navbar-nav {
+    padding-top: 10px;
+}
+
+.frontpage-header {
+    font-family: 'IM Fell French Canon', sans-serif;
+    background: rgba(255, 255, 255, 0.75);
+    margin: auto;
+}
+
+.header-caption {
+    font-family: 'IM Fell French Canon', sans-serif;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', sans-serif;
+}
