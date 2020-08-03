@@ -2,5 +2,8 @@
     margin-top: -2em;
     background: url('natural-default-pattern.png');
     background-repeat: repeat;
-    color: aliceblue;
+}
+
+.jumbotron p {
+    color: whitesmoke;
 }
