@@ -4,6 +4,6 @@
     background-repeat: repeat;
 }
 
-.jumbotron p {
+.jumbotron .container .lead {
     color: whitesmoke;
 }
