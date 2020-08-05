@@ -1,14 +1,14 @@
 function validateLogin() {
     var username = document.getElementById('sign_in_user').value;
     var password = document.getElementById('sign_in_pass').value;
-    var successScreen = document.getElementById('success_login');
-    var loginScreen = document.getElementById('sign_in');
+    var successScreen = document.getElementById('success_login').style.display;
+    var loginScreen = document.getElementById('sign_in').style.display;
     if (username == null || password == null || username.length == 0 || password.length == 0) {
         alert('Invalid login credentials!');
     }
     if (username != null && password != null) {
-        successScreen.style.display = 'inline';
-        loginScreen.style.display = 'none';
+        successScreen = 'inline';
+        loginScreen = 'none';
     }
 }
 
