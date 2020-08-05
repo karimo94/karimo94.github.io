@@ -5,11 +5,10 @@ function validateLogin() {
     var loginScreen = document.getElementById('sign_in');
     if (username == null || password == null || username.length == 0 || password.length == 0) {
         alert('Invalid login credentials!');
-        return false;
+        return;
     }
     successScreen.style.display = 'inline';
     loginScreen.style.display = 'none';
-    return true;
 }
 
 function validatePassword() {
