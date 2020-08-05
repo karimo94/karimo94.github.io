@@ -1,0 +1,35 @@
+body {
+    background: rgb(9, 9, 121);
+    background: radial-gradient(circle, rgba(9, 9, 121, 0.8) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+#loginForm {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+svg {
+    height: 30%;
+    width: 30%;
+}
+
+h3 {
+    text-align: center;
+}
+
+#signupForm {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+#newAccountBtn {
+    background-color: yellowgreen;
+}
+
+#successForm {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
