@@ -5,8 +5,14 @@
     <title>Karim O. Credit card checkout</title>
     <!--styles here-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -14,47 +20,183 @@
 <body>
 
     <main role="main">
-        <div class="page" class="ui-page ui-page-theme-a ui-page-active" id="checkout_page">
+        <!--<div class="page" class="ui-page ui-page-theme-a ui-page-active" id="checkout_page">-->
+        <!--consider making this div a card class-->
 
-            <form class="container-fluid col-xs-12 col-sm-6 col-md-8 shadow-lg p-3 mb-5 bg-white rounded" id="loginForm">
-                <h3><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <form class="container-fluid col-xs-12 col-sm-6 col-md-8 shadow-lg p-3 mb-5 bg-white rounded" id="checkout_form">
+            <h3><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                   </svg></h3>
-                <h3>Checkout</h3>
-                <div class="form-group">
-                    <label>Email or Username</label>
-                    <input type="text" class="form-control" id="sign_in_user" placeholder="Enter email or Username" />
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password" id="sign_in_pass" />
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" id="keepSignIn" class="form-check-input" />
-                    <label class="form-check-label" for="keepSignIn">Keep me signed in.</label>
-                    <p><label><a href="#">Forgot your password or username?</a></label></p>
-                </div>
+            <h3>Checkout</h3>
+            <div class="row">
+                <div class="col-lg-6">
 
-                <div class="form-group">
-                    <button class="btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent form-button-input" onclick="validateLogin()">
-                                Sign In
-                    </button>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>Email</label>
+                                <input type="text" class="form-control" id="email_input" placeholder="abc@email.com" />
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Phone</label>
+                                <input type="tel" class="form-control" id="phone_input" placeholder="+12345678900" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- Grid row -->
+                        <div class="row">
 
-                    <p id="linkToSignUp"><a href="#" onclick="return show('sign_up','sign_in');">New to this app? Sign up now.</a></p>
+                            <!-- Grid column -->
+                            <div class="col-lg-6">
+
+                                <!-- First name -->
+                                <label>First Name</label>
+                                <input type="text" id="fname" class="form-control" placeholder="First Name">
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-6">
+
+                                <!-- Last name -->
+                                <label>Last Name</label>
+                                <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label>Street Address</label>
+                                <input type="text" id="address" class="form-control" pattern="^[#.0-9a-zA-Z\s,-]+$" />
+
+                                <label>Apartment (optional)</label>
+                                <input type="text" id="optional_addr" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>State</label>
+                                <!--state dropdown-->
+                                <select class="form-control">
+                                    <option value="">State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Zip</label>
+                                <input type="text" id="postal_code" class="form-control" maxlength="6" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Card Number</label>
+                        <input id="card_num" class="form-control" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                        <label>CVV</label>
+                        <input type="tel" cid="cvv_security_num" class="form-control" inputmode="numeric" maxlength="3" />
+                        <!--calendar drop downs-->
+                        <label>Expiration</label>
+
+                        <input class="form-control" type="date" name="expiry" id="expiry" maxlength="4" pattern="\d{1,2}/\d{4}" />
+                    </div>
                 </div>
-            </form>
-        </div>
+                <div class="col-lg-6">
+                    <!--Total amount displayed with link to the cart-->
+                    <div class="card">
+                        <h3>Summary</h3>
+
+                        <p id="subtotal"></p>
+
+                        <p>Shipping: Free</p>
+                        <p>Tax: 3.5%</p>
+
+                        <p id="finaltotal"></p>
+
+                        <h5><a class="btn btn-primary"><i class="fas fa-arrow-left"> Back to Shopping Cart</i></a></h5>
+                    </div>
+                    <div class="row">
+                        <div class="form-inline col-sm-8 ">
+                            <input class="form-control" type="text" name="couponcode" id="couponcode" placeholder="Coupon code" />
+                            <button type="button" class="btn btn-primary btn-rounded" id="applycoupon">Apply</button>
+                        </div>
+                    </div>
+                    <label for="comments">Additional information (optional) </label>
+                    <textarea id="comments" class="md-textarea form-control" rows="4"></textarea>
+
+                    <!--Pay now button-->
+                    <button type="button" class="btn btn-success btn-rounded"><i class="fas fa-shopping-cart mr-1"></i>Complete Transaction</button>
+                </div>
+            </div>
+        </form>
+        <!--</div>-->
 
 
     </main>
     <!--scripts here-->
-    <!-- Bootstrap core JavaScript, Popper, and JQuery
+    <!-- Bootstrap core JavaScript, Popper, Materal Design, and JQuery
     ================================================== -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
 </body>
 
