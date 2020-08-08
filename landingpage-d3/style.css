@@ -1,0 +1,151 @@
+.view,
+body,
+html {
+    height: 100%;
+    font-family: 'SF Display';
+}
+
+
+/** Regular */
+
+@font-face {
+    font-family: "SF Display";
+    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 300% !important;
+}
+
+.navbar ul {
+    margin: auto;
+}
+
+.navbar li {
+    margin-right: 5px;
+    margin-left: 5px;
+    border-left: 1px solid rgba(47, 79, 79, .5);
+}
+
+.nav-item {
+    color: white;
+}
+
+.page-footer,
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+
+.jumbotron {
+    background-image: url(header_section.jpg);
+    background-size: cover;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.container h1 {
+    font-size: 700%;
+    color: white;
+    margin: auto;
+    background-color: rgba(47, 79, 79, .6);
+}
+
+.section {
+    padding-bottom: 200px;
+}
+
+.about {
+    background-image: url('about_section.jpg');
+    background-size: cover;
+}
+
+.gallery {
+    background-image: url('gallery_section.jpg');
+    background-size: cover;
+}
+
+.services {
+    background-image: url('services_section.jpg');
+    background-size: cover;
+}
+
+.contact {
+    background-image: url('contact_section.jpg');
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.equipment {
+    background-image: url('equipment_section.jpg');
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.card {
+    margin-top: 50px;
+}
+
+.card h3 {
+    font-size: 300%;
+}
+
+.card li {
+    font-size: 200%;
+}
+
+
+/* Style all font awesome icons */
+
+.social_media {
+    font-size: 700%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 80px;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Set a specific color for each brand */
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #ea4c89;
+    color: white;
+}
+
+.fa-envelope {
+    background: #1f664e;
+    color: white;
+}
