@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Roboto';
+    font-weight: 100px;
+}
+
+@media (max-width:768px) {
+    .card {
+        min-width: 100%;
+        display: flex;
+        min-height: 100%;
+    }
+    .mdl-button {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 12px;
+        width: 32px;
+        height: 32px;
+    }
+    .mdl-textfield__input {
+        font-size: 56px;
+        min-height: 1em;
+    }
+}
+
+@media (max-device-width:320px) {
+    .card {
+        min-width: 100%;
+        display: flex;
+        min-height: 50%;
+    }
+    .mdl-button {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        width: 32px;
+        height: 32px;
+    }
+    .mdl-textfield__input {
+        font-size: 32px;
+        min-height: 1em;
+    }
+}
+
+body {
+    margin-top: 1em;
+    font-size: 1em;
+    background-color: rgb(54, 133, 207);
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*change to black*/
+}
+
+.card {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 25px;
+    height: 700px;
+}
+
+.row {
+    margin: auto;
+}
+
+.mdl-button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    width: 70px;
+    height: 70px;
+}
+
+.mdl-textfield__input {
+    font-size: 64px;
+    color: lightgray;
+    min-height: 1em;
+}
+
+#op {
+    background-color: orange;
+}
