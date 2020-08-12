@@ -42,7 +42,7 @@ html {
     .card {
         min-width: 100%;
         display: flex;
-        min-height: 50%;
+        min-height: 100%;
     }
     .mdl-button {
         margin-bottom: 10px;
