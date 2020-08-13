@@ -13,16 +13,10 @@ html {
     box-sizing: inherit;
 }
 
-html {
-    font-family: 'Roboto';
-    font-weight: 100px;
-}
-
-@media (max-width:768px) {
+@media screen and (max-device-width:800px) {
     .card {
-        min-width: 100%;
-        display: flex;
-        min-height: 100%;
+        width: 90%;
+        height: 90%;
     }
     .mdl-button {
         margin-bottom: 10px;
@@ -38,25 +32,48 @@ html {
     }
 }
 
-@media (max-device-width:320px) {
+@media screen and (max-device-width:768px) {
     .card {
-        min-width: 100%;
-        display: flex;
-        min-height: 100%;
+        width: 90%;
+        height: 90%;
     }
     .mdl-button {
         margin-bottom: 10px;
         margin-top: 10px;
-        color: white;
         font-weight: bold;
         font-size: 12px;
         width: 32px;
         height: 32px;
     }
     .mdl-textfield__input {
+        font-size: 56px;
+        min-height: 1em;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    .card {
+        width: 90%;
+        height: 90%;
+    }
+    .mdl-button {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+        width: 48px;
+        height: 48px;
+    }
+    .mdl-textfield__input {
         font-size: 32px;
         min-height: 1em;
     }
+}
+
+html {
+    font-family: 'Roboto';
+    font-weight: 100px;
 }
 
 body {
@@ -68,14 +85,19 @@ body {
     /*change to black*/
 }
 
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 45%;
+        height: 700px;
+    }
+}
+
 .card {
     display: flex;
-    width: 30%;
     margin: auto;
     box-sizing: border-box;
     background-color: black;
     border-radius: 25px;
-    height: 700px;
 }
 
 .row {
