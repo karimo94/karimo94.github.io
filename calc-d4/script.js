@@ -21,3 +21,10 @@ function changeSign() {
     expression = value;
     document.getElementById('resultWindow').value = expression;
 }
+
+function percentage() {
+    let value = parseInt(expression, 10);
+    value = value / 100;
+    expression = value;
+    document.getElementById('resultWindow').value = expression;
+}
