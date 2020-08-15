@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+
+    <title>Karim O. User Profile Design</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title"><i class="fa fa-hammer"></i> Hire-a-builder</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!--Add a search field-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" placeholder="Search jobs/people" type="text" name="sample" id="fixed-header-drawer-exp">
+                    </div>
+                </div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">Welcome, <p style="display: inline;" id="username">Karim</p></a>
+                </nav>
+            </div>
+        </header>
+        <!--navmenu-->
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Welcome, <h5 style="display: inline;" id="username">Karim</h5></span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Post a project, job, or gig</a>
+                <a class="mdl-navigation__link" href="">Bid for jobs</a>
+                <a class="mdl-navigation__link" href="">Message Center <p style="display: inline; color: green;" id="msgCount">(3)</p></a>
+                <a class="mdl-navigation__link" href="">Profile Settings</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                <!--contractor picture large-->
+                <!--large wide card component-->
+                <!--Name-->
+                <!--Location-->
+                <!--rate of service-->
+                <!--rating-->
+                <!--skill icons-->
+                <!--about bio-->
+                <!--examples of projects-->
+                <!--send message button-->
+                <!--business card component-->
+                <div class="user-prof-card mdl-card mdl-shadow--2dp">
+
+                    <div class="mdl-card__title">
+                        <h3>Bobby Bricklayer</h3>
+                        <img src="carpenterpic.jpg" alt="builder" />
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--4-col">
+                                <h4 style="display: inline; text-align: left;"><i class="fa fa-location-arrow" aria-hidden="true"></i> Pittsburgh, PA</h4>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col" style="text-align: center;">
+                                <!--rating field-->
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col" style="text-align: right;">
+                                <h4 style="display:inline;" id="jobRate">$65/hr</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-card__supporting-text ">
+                        <h4>Skill badges</h4>
+                        <ul class="fa-ul ">
+                            <li class="fa-li "><i class="fas fa-brush "></i> Paint novice.</li>
+                            <li class="fa-li "><i class="fas fa-truck-pickup "></i> Pickup truck available.</li>
+                            <li class="fa-li "><i class="fas fa-shower "></i> Plumbing veteran.</li>
+                            <li class="fa-li "><i class="fas fa-toolbox "></i> Neat & skillful.</li>
+                        </ul>
+                    </div>
+                    <div class="mdl-card__supporting-text ">
+                        <h4>About me</h4>
+                        Got water leakage? Not sure how to install a water heater? Need a busted pipe fixed underground? I'm your guy, having dealt with all sorts of plumbing since starting carpentry, I have over 8 years experience. I can also do some masonry and have been part
+                        of house building efforts. I look forward to working with you and your project.
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-card--border ">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="sendMsgBtn">
+                            <i class="fa fa-comment"></i> Send Message
+                        </a>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-card--border">
+                        <h4>Reviews</h4>
+                        <div class="mdl-card custReview mdl-shadow--2dp">
+                            <h5 class="mdl-card__title">President Trump</h5>
+                            <div class="mdl-card__supporting-text">
+                                Bobby fixed my water heater, and replaced my shower pipes, threw in a free new pressure shower head. My hair looks fabulous now. I took a star away because he's a Democrat. Love you Bobby. #MAGA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-card--border">
+
+                        <h4>Business card</h4>
+                        <div class="mdl-card custReview mdl-shadow--2dp">
+                            <div class="mdl-card__supporting-text">
+                                <ul>
+                                    <li><i class="fa fa-phone"></i> <a>+1 555-555-5555</a></li>
+                                    <li><i class="fa fa-envelope"></i> <a>bobby@email.com</a></li>
+                                    <li><i class="fab fa-facebook"></i> <a>bobby.builds</a></li>
+                                    <li><i class="fa fa-print"></i> <a>+1 555-777-9999</a></li>
+                                    <li><i class="fa fa-paper-plane"></i> <a>Po Box 1234 Central Plaza 5th Ave NW P'burgh, PA</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-card__menu ">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect ">
+                        <i class="material-icons ">share</i>
+                      </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!--Scripts-->
+    <!-- JQuery -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js "></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js "></script>
+</body>
+
+</html>

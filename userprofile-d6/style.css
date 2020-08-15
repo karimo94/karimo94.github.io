@@ -1,0 +1,101 @@
+.view,
+body,
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'SF Display';
+}
+
+
+/** Regular */
+
+@font-face {
+    font-family: "SF Display";
+    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.user-prof-card.mdl-card {
+    margin: auto;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.user-prof-card>.mdl-card__title {
+    color: white;
+    background-color: rgb(54, 152, 212);
+    background-image: url("header_backv2.jpg");
+    background-size: initial;
+    background-blend-mode: soft-light;
+}
+
+.mdl-card__title>img {
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20%;
+    width: 20%;
+    height: 20%;
+}
+
+.user-prof-card>.mdl-card__menu {
+    color: #fff;
+}
+
+.fa-star {
+    font-size: large;
+}
+
+.checked {
+    color: orange;
+}
+
+#sendMsgBtn {
+    background-color: limegreen;
+}
+
+.fas {
+    background: #ffc0c0;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.fa-li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.custReview {
+    border-radius: 5px;
+}
+
+h4 {
+    border-bottom: 1px solid lightskyblue;
+}
+
+@media screen and (max-device-width:800px) {
+    .user-prof-card.mdl-card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-device-width:768px) {
+    .user-prof-card.mdl-card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    .user-prof-card.mdl-card {
+        width: 90%;
+    }
+}
