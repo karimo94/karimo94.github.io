@@ -4,9 +4,8 @@ body {
 }
 
 #loginForm {
-    position: absolute;
-    top: 10%;
-    left: 15%;
+    margin: auto;
+    margin-top: 15px;
 }
 
 svg {
@@ -32,4 +31,22 @@ h3 {
     position: absolute;
     top: 10%;
     left: 15%;
+}
+
+@media screen and (max-device-width:800px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-device-width:768px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    form {
+        width: 90%;
+    }
 }
