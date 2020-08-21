@@ -1,5 +1,11 @@
 body {
     background-color: yellowgreen;
+    font-family: "SF Display";
+}
+
+@font-face {
+    font-family: "SF Display";
+    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
 }
 
 svg {
