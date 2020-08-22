@@ -45,6 +45,10 @@ html {
     padding-bottom: 100px;
 }
 
+#billboard {
+    font-family: Pacifico;
+}
+
 .container h1 {
     font-size: 700%;
     color: white;
