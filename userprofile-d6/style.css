@@ -5,15 +5,7 @@ html {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
-    font-family: 'SF Display';
-}
-
-
-/** Regular */
-
-@font-face {
-    font-family: "SF Display";
-    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+    font-family: 'Helvetica';
 }
 
 *,
