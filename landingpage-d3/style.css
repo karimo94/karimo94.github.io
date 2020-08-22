@@ -2,16 +2,11 @@
 body,
 html {
     height: 100%;
-    font-family: 'SF Display';
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 
 /** Regular */
-
-@font-face {
-    font-family: "SF Display";
-    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
-}
 
 .navbar {
     /*background-color: rgba(255, 255, 255, .3);
