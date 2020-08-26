@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0” />
-    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Karim O. Music Player UX UI Design</title>
 
@@ -46,15 +45,15 @@
             <small style="float: left; position: relative; " class="start-time">00:00</small>
             <small style="float: right; position: relative; " class="end-time">00:00</small>
             <br>
-            <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
-                <div>
-                    <a class="btn-floating btn-large waves-effect waves-light red" style="width: 60px; height:60px;"><i class="material-icons" id="previous"  onclick="getPrevSong()">fast_rewind</i></a>
+            <div class="row" id="rowButtons">
+                <div class="col">
+                    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="previous"  onclick="getPrevSong()">fast_rewind</i></a>
                 </div>
-                <div>
-                    <a class="btn-floating btn-large waves-effect waves-light red" style="width: 80px; height:80px;"><i class="material-icons"  id="playpause"  onclick="playPause(this)">play_arrow</i></a>
+                <div class="col">
+                    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"  id="playpause"  onclick="playPause(this)">play_arrow</i></a>
                 </div>
-                <div>
-                    <a class="btn-floating btn-large waves-effect waves-light red" style="width: 60px; height:60px;"><i class="material-icons" id="next"  onclick="getNextSong()">fast_forward</i></a>
+                <div class="col">
+                    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="next"  onclick="getNextSong()">fast_forward</i></a>
                 </div>
             </div>
 

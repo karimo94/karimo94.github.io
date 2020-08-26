@@ -149,11 +149,11 @@
                         <label>Card Number</label>
                         <input id="card_num" class="form-control" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
                         <label>CVV</label>
-                        <input type="tel" cid="cvv_security_num" class="form-control" inputmode="numeric" maxlength="3" />
+                        <input type="tel" cid="cvv_security_num" class="form-control" inputmode="numeric" maxlength="3" placeholder="000" />
                         <!--calendar drop downs-->
                         <label>Expiration</label>
 
-                        <input class="form-control" type="date" name="expiry" id="expiry" maxlength="4" pattern="\d{1,2}/\d{4}" />
+                        <input class="form-control" type="text" name="expiry" id="expiry" maxlength="5" pattern="([0-9]{2}[/]?){2}" placeholder="MM/YY" />
                     </div>
                 </div>
                 <div class="col-lg-6">

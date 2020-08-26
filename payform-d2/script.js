@@ -10,8 +10,8 @@ $(document).ready(function() {
 
     generateAmount();
     calculateTotal();
-    $("p#subtotal").text("Subtotal: " + subtotal.toPrecision(5).toString());
-    $("p#finaltotal").text("Order total: " + finalAmount.toPrecision(5).toString());
+    $("p#subtotal").text("Subtotal:$" + subtotal.toPrecision(5).toString());
+    $("p#finaltotal").text("Order total:$" + finalAmount.toPrecision(5).toString());
 });
 
 function calculateTotal() {
