@@ -94,7 +94,6 @@ progress::-webkit-progress-value {
         margin: auto;
         margin-top: 20%;
         border-radius: 30px;
-        transform: scaleX(1.22) scaleY(1.3);
     }
     .card-img {
         width: 100%;
