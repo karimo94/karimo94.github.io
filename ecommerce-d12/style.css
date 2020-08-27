@@ -75,6 +75,9 @@ footer p {
         /* 50% of your logo width */
         display: block;
     }
+    .navbar-toggler {
+        margin-top: -2%;
+    }
     .row {
         margin-top: 25%;
     }
@@ -99,6 +102,9 @@ footer p {
     }
     .navbar-collapse {
         background: rgb(250, 250, 250);
+    }
+    .navbar-toggler {
+        margin-top: -2%;
     }
     .row {
         margin-top: 25%;
