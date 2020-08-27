@@ -1,0 +1,36 @@
+body {
+    background: -webkit-linear-gradient(1deg, rgb(20, 88, 90), rgb(6, 7, 37));
+    background: linear-gradient(1deg, rgb(20, 88, 90), rgb(6, 7, 37));
+    font-family: 'Roboto Slab';
+}
+
+.mdl-card__title-text {
+    font-family: 'Roboto Slab';
+    margin: auto;
+    color: rgb(66, 117, 117);
+}
+
+.mdl-card {
+    margin: auto;
+    margin-top: 3%;
+}
+
+.mdl-cell {
+    border-bottom: 1px dashed grey;
+}
+
+.mdl-card__actions {
+    background-color: lightcoral;
+}
+
+#totalSection {
+    background-color: rgb(112, 196, 196);
+    width: 100%;
+}
+
+.mdl-card__actions>a {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 150%;
+}
