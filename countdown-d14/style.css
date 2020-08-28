@@ -1,57 +1,24 @@
 body {
-    background-color: rgb(77, 74, 74);
+    background-color: rgb(119, 112, 112);
     background-image: url('padded.png');
+    background-blend-mode: overlay;
+    font-family: 'Poppins';
 }
 
-.base-timer {
-    position: relative;
-    width: 100px;
-    height: 100px;
+.mdl-card {
+    border-radius: 20px;
 }
 
-.base-timer__svg {
-    transform: scaleX(-1);
+.btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    padding: 10px 16px
 }
 
-.base-timer__circle {
-    fill: none;
-    stroke: none;
-}
-
-.base-timer__path-elapsed {
-    stroke-width: 7px;
-    stroke: grey;
-}
-
-.base-timer__path-remaining {
-    stroke-width: 7px;
-    stroke-linecap: round;
-    transform: rotate(90deg);
-    transform-origin: center;
-    transition: 1s linear all;
-    fill-rule: nonzero;
-    stroke: currentColor;
-}
-
-.base-timer__path-remaining.green {
-    color: rgb(65, 184, 131);
-}
-
-.base-timer__path-remaining.orange {
-    color: orange;
-}
-
-.base-timer__path-remaining.red {
-    color: red;
-}
-
-.base-timer__label {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
+#timeDisplay {
+    border-radius: 20px;
+    font-size: larger;
+    margin: auto;
+    width: min-content;
 }

@@ -5,7 +5,7 @@ html {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
-    font-family: 'Helvetica';
+    font-family: 'Poppins';
 }
 
 *,
@@ -37,6 +37,11 @@ html {
     border-radius: 20%;
     width: 20%;
     height: 20%;
+}
+
+#profileName {
+    font-weight: bolder;
+    font-family: 'Poppins';
 }
 
 .user-prof-card>.mdl-card__menu {
@@ -89,5 +94,16 @@ h4 {
 @media screen and (max-device-width: 414px) {
     .user-prof-card.mdl-card {
         width: 105%;
+    }
+    .mdl-card__title img {
+        margin-right: 10%;
+        margin-top: 7%;
+        transform: scale(1.5, 1.5);
+    }
+    .mdl-layout-title {
+        font-size: small;
+    }
+    .mdl-textfield__input[name="searchbar"] {
+        width: 50%;
     }
 }
