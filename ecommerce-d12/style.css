@@ -4,6 +4,7 @@
 
 body {
     background: url('retina_wood.png');
+    font-family: 'Poppins';
 }
 
 .navbar-brand>span {

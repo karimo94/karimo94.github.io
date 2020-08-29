@@ -1,6 +1,7 @@
 function startCountdown() {
     // Set the date we're counting down to
-    var countDownDate = getTime();
+    var timeSet = document.getElementById('timeDisplay').value;
+    var countDownDate = new Date(getTime() + timeSet); //start here by grabbing time and adding it to now()
 
     // Update the count down every 1 second
     var x = setInterval(function() {

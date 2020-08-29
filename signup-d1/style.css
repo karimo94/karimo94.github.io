@@ -1,6 +1,7 @@
 body {
     background: rgb(9, 9, 121);
     background: radial-gradient(circle, rgba(9, 9, 121, 0.8) 0%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Varela Round';
 }
 
 #loginForm {
@@ -15,12 +16,11 @@ svg {
 
 h3 {
     text-align: center;
+    font-family: 'Varela Round';
 }
 
 #signupForm {
-    position: absolute;
-    top: 10%;
-    left: 15%;
+    margin: auto;
 }
 
 #newAccountBtn {
@@ -28,14 +28,15 @@ h3 {
 }
 
 #successForm {
-    position: absolute;
-    top: 10%;
-    left: 15%;
+    margin: auto;
 }
 
 @media screen and (max-device-width:800px) {
     form {
         width: 90%;
+    }
+    #signupForm {
+        margin: auto;
     }
 }
 
@@ -43,10 +44,16 @@ h3 {
     form {
         width: 90%;
     }
+    #signupForm {
+        margin: auto;
+    }
 }
 
 @media screen and (max-device-width: 414px) {
     form {
         width: 90%;
+    }
+    #signupForm {
+        margin: auto;
     }
 }
