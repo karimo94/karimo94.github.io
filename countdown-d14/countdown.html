@@ -27,24 +27,36 @@
     <div class="mdl-card">
 
         <div class="mdl-card__title">
-            <div class="row">
-                <canvas id="myCanvas" width="250" height="250"></canvas>
+            <div id="clockdiv">
+                <div>
+                    <span id="hrs">00</span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span id="mins">00</span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span id="secs">00</span>
+                    <div class="smalltext">Seconds</div>
+                </div>
             </div>
+
         </div>
         <div class="card-body">
             <div class="row">
-                <input type="time" id="timeDisplay" class="form-control" step="2" placeholder="hh:mm:ss" />
+                <input type="time" id="timeDisplay" class="form-control btn-outline-info" step="2" placeholder="hh:mm:ss" />
             </div>
             <br>
-            <div class="row">
+            <div class="row" id="controls">
                 <div class="col">
-                    <button class="btn btn-success" onclick="startCountdown(this)">Start</button>
+                    <button class="btn btn-outline-success" onclick="startCountdown()">Start</button>
                 </div>
                 <div class="col">
-                    <button class="btn btn-info" onclick="pauseCountdown(this)">Pause</button>
+                    <button class="btn btn-outline-info" onclick="pauseCountdown()" id="pauseBtn">Pause</button>
                 </div>
                 <div class="col">
-                    <button class="btn btn-danger" onclick="stopCountdown(this)">Stop</button>
+                    <button class="btn btn-outline-danger" onclick="stopCountdown()" id="stopBtn">Stop</button>
                 </div>
             </div>
         </div>

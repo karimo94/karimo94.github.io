@@ -7,6 +7,9 @@ body {
 
 .mdl-card {
     border-radius: 20px;
+    background-color: #0ff0bf;
+    margin: auto;
+    margin-top: 5%;
 }
 
 .btn {
@@ -21,4 +24,35 @@ body {
     font-size: larger;
     margin: auto;
     width: min-content;
+}
+
+.card-body {
+    background-color: white;
+}
+
+#clockdiv {
+    margin: auto;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 5px;
+    background: #00BF96;
+    display: inline-block;
+    margin: auto;
+}
+
+#clockdiv div>span {
+    padding: 10px;
+    border-radius: 5px;
+    background: #00816A;
+    display: inline-block;
+    color: white;
+    font-size: 35px;
+    margin: auto;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
 }
