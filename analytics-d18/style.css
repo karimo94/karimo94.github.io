@@ -1,0 +1,32 @@
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+    background: #660c21;
+    background-image: url(cubes.png);
+    background-blend-mode: normal;
+    /* Old browsers 
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+    /* FF3.6-15 
+    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);*/
+    /* Chrome10-25,Safari5.1-6 
+    background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);*/
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0);*/
+    /* IE6-9 */
+    font-family: 'Montserrat';
+}
+
+.mdl-card {
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.mdl-card__media {
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+.mdl-card__media>canvas {
+    border-radius: 10px;
+}
