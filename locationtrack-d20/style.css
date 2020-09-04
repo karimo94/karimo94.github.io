@@ -1,0 +1,82 @@
+body {
+    background: url(maze-white.png);
+    background-color: #1b262c;
+    /*background-image: linear-gradient(315deg, rgba(38, 9, 58, 1) 0%, rgba(35, 49, 102, 1) 74%);*/
+    background-blend-mode: soft-light;
+    font-family: 'Ubuntu';
+}
+
+.mdl-card {
+    margin: auto;
+    width: 50%;
+}
+
+.mdl-card__title {
+    background-color: #00b7c2;
+    color: white;
+    font-weight: bold;
+}
+
+#mapid {
+    height: 500px;
+}
+
+.mdl-card__supporting-text {
+    color: #e94560;
+    font-weight: bolder;
+}
+
+#curAddress {
+    color: rgb(8, 107, 41);
+}
+
+#trackBtn {
+    background-color: #0f4c75;
+}
+
+.mdl-card__actions {
+    background-color: #00b7c2;
+    color: white;
+}
+
+.mdl-card__actions label {
+    color: white;
+}
+
+.switch>.material-icons {
+    margin: auto;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #e94560;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: white;
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (max-device-width:800px) {
+    .mdl-card {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-device-width:768px) {
+    .mdl-card {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    .mdl-card {
+        margin: auto;
+        width: 100%;
+    }
+    #mapid {
+        height: 300px;
+    }
+}

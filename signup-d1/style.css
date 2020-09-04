@@ -9,12 +9,11 @@ body {
     margin-top: 15px;
 }
 
-svg {
-    height: 30%;
-    width: 30%;
+img {
+    width: 100%;
 }
 
-h3 {
+h1 {
     text-align: center;
     font-family: 'Varela Round';
 }
