@@ -16,6 +16,11 @@ html {
     box-sizing: inherit;
 }
 
+.mdl-layout-title {
+    font-family: 'Expletus Sans';
+    font-style: italic;
+}
+
 .user-prof-card.mdl-card {
     margin: auto;
     width: 50%;
