@@ -1,0 +1,43 @@
+body {
+    background: url(checkered-pattern.png);
+    background-color: darkseagreen;
+    background-blend-mode: normal;
+    font-family: 'Quicksand';
+}
+
+#searchForm {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    margin: auto;
+    padding-top: 15px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 2%;
+    width: 95%;
+}
+
+.mdl-card__title {
+    font-family: 'Lobster';
+    color: darkslategray;
+}
+
+.mdl-textfield {
+    margin-left: 2%;
+    width: 95%;
+}
+
+input[type="text"] {
+    font-size: 32px;
+}
+
+.mdl-card {
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0.7;
+    position: absolute;
+    margin-top: 5%;
+}
+
+li {
+    color: black;
+}

@@ -1,0 +1,121 @@
+body {
+    background: #076585;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(191, 214, 236), hsl(195, 90%, 27%));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(167, 201, 233), #076585);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Rajdhani';
+    color: rgb(9, 9, 85);
+}
+
+.card {
+    margin: auto;
+    margin-top: 2px;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.row {
+    border-bottom: 1px solid gold;
+    border-radius: 20px;
+}
+
+#flightHeader {
+    position: absolute;
+    right: 0;
+    padding-right: 8px;
+    margin-top: 10%;
+}
+
+#flightSmallHeader {
+    position: absolute;
+    right: 0;
+    padding-right: 8px;
+    margin-top: 22%;
+    font-size: large;
+}
+
+#schedule {
+    margin: auto;
+}
+
+#qrcode {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#luftLogoFooter {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    margin-top: 2px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 40%;
+    }
+    #flightHeader {
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+        margin-top: 10%;
+    }
+    #flightSmallHeader {
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+        margin-top: 22%;
+        font-size: large;
+    }
+}
+
+@media screen and (max-device-width:768px) {
+    .card {
+        width: 60%;
+    }
+    #flightHeader {
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+        margin-top: 10%;
+    }
+    #flightSmallHeader {
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+        margin-top: 22%;
+        font-size: large;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    .card {
+        width: 100%;
+    }
+    #flightHeader {
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+        margin-top: 10%;
+        font-size: xx-large;
+    }
+    #flightSmallHeader {
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+        margin-top: 22%;
+        font-size: small;
+    }
+    #qrcode {
+        width: 120%;
+    }
+    #passengerName {
+        font-size: small;
+    }
+    #seatClass {
+        font-size: small;
+    }
+}
