@@ -7,6 +7,11 @@ body {
     font-family: 'Poppins';
 }
 
+h2,
+h3 {
+    font-family: 'Poppins';
+}
+
 .navbar-brand>span {
     font-family: 'Roboto Slab';
     border: 1px solid darkgrey;
@@ -26,17 +31,12 @@ body {
     margin-right: 5px;
 }
 
-.carousel-inner {
-    height: max-content;
-    width: max-content;
-}
-
 .fas {
     color: darkgrey;
     display: inline-table;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 15%;
+    margin-top: 30%;
 }
 
 #searchInput {
@@ -50,6 +50,10 @@ body {
 img {
     width: 90%;
     height: auto;
+}
+
+.mySlides {
+    display: none;
 }
 
 footer {
