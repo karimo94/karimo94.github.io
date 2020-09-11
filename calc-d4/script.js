@@ -12,7 +12,7 @@ function clearWindow() {
 }
 
 function getResult() {
-    document.getElementById('resultWindow').value = 'oops, just a demo';
+    document.getElementById('resultWindow').value = math.evaluate(expression);
 }
 
 function changeSign() {
