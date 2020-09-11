@@ -169,20 +169,30 @@ window.addEventListener("load", function() {
 });
 
 function updateResults(value) {
-    //use fuse.js 
-    results = fuse.search(value);
-    renderList();
-}
-
-function renderList() {
+    var root = $('.collection');
+    if (value.length > 0) {
+        //use fuse.js 
+        results = fuse.search(value);
+        //reset child elements
+        root.empty(); //clear child elements
+    }
+    if (value.length == 0) {
+        results = [];
+        root.empty(); //clear child elements
+    }
     //render a table list list of book results
     //with border on top and bottom
     //make each element clickable
-    var root = $('.collection'); //use InnerHTML
-    var li = '<li class="collection-item"><i class="material-icons">book</i>' +
-        this.results.title + '<small>' + this.results.firstName + ' ' + this.results.lastName + '</small>' + '</li>';
+    var title = '';
+    var author = '';
+    var li = '';
+    for (var i = 0; i < results.length; i += 1) {
+        title = this.results[i].item.title;
+        author = this.results[i].item.author.firstName + " " + this.results[i].item.author.lastName;
+        li = '<li class="collection-item"><i class="material-icons">book</i>' +
+            title + ': ' + '<small>' + author + '</small>' + '</li>'
+        root.append(li);
+    }
     //this.results.title
     //this.results.firstName + ' ' + this.results.lastName
-    root.append(li);
-
 }
