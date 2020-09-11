@@ -77,7 +77,9 @@ html {
 body {
     margin-top: 1em;
     font-size: 1em;
+    background: url(argyle.png);
     background-color: rgb(54, 133, 207);
+    background-blend-mode: normal;
     flex-wrap: wrap;
     flex-direction: row;
     /*change to black*/

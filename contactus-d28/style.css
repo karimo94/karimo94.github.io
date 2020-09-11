@@ -1,0 +1,39 @@
+body {
+    background: url(Tropical-Plant-Plain.jpg);
+    background-size: cover;
+    font-family: 'Belleza';
+    font-size: large;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Belleza';
+}
+
+.card-title {
+    margin: auto;
+}
+
+.form-control {
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+.card {
+    opacity: .9;
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
+    border: 0px;
+    border-radius: 15px;
+    background: #001510;
+    color: white;
+}
+
+@media screen and (max-device-width: 414px) {
+    .card {
+        width: 90%;
+        height: 100%;
+    }
+}
