@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/pricetable-30/public/index.html/static/css/main.5c3316e6.chunk.css",
+    "main.js": "/pricetable-30/public/index.html/static/js/main.6761bcca.chunk.js",
+    "main.js.map": "/pricetable-30/public/index.html/static/js/main.6761bcca.chunk.js.map",
+    "runtime-main.js": "/pricetable-30/public/index.html/static/js/runtime-main.16b22f0f.js",
+    "runtime-main.js.map": "/pricetable-30/public/index.html/static/js/runtime-main.16b22f0f.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/pricetable-30/public/index.html/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.2efd549b.chunk.js": "/pricetable-30/public/index.html/static/js/2.2efd549b.chunk.js",
+    "static/js/2.2efd549b.chunk.js.map": "/pricetable-30/public/index.html/static/js/2.2efd549b.chunk.js.map",
+    "index.html": "/pricetable-30/public/index.html/index.html",
+    "precache-manifest.eea746c403fef737429a17ba87b512ab.js": "/pricetable-30/public/index.html/precache-manifest.eea746c403fef737429a17ba87b512ab.js",
+    "service-worker.js": "/pricetable-30/public/index.html/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/pricetable-30/public/index.html/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.5c3316e6.chunk.css.map": "/pricetable-30/public/index.html/static/css/main.5c3316e6.chunk.css.map",
+    "static/js/2.2efd549b.chunk.js.LICENSE.txt": "/pricetable-30/public/index.html/static/js/2.2efd549b.chunk.js.LICENSE.txt",
+    "static/media/cappuccino.png": "/pricetable-30/public/index.html/static/media/cappuccino.eed1ddc2.png",
+    "static/media/croissant.png": "/pricetable-30/public/index.html/static/media/croissant.77ddaa70.png",
+    "static/media/espresso.png": "/pricetable-30/public/index.html/static/media/espresso.ea06928e.png",
+    "static/media/header.jpg": "/pricetable-30/public/index.html/static/media/header.382aa56f.jpg",
+    "static/media/madeleine.png": "/pricetable-30/public/index.html/static/media/madeleine.2218b44e.png",
+    "static/media/mocha.png": "/pricetable-30/public/index.html/static/media/mocha.a34f7ca8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16b22f0f.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.2efd549b.chunk.js",
+    "static/css/main.5c3316e6.chunk.css",
+    "static/js/main.6761bcca.chunk.js"
+  ]
+}
