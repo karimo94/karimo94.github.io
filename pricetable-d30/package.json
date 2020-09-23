@@ -2,7 +2,7 @@
     "name": "pricetable-d30",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://karimo94.github.io/pricetable-30/build/index.html",
+    "homepage": "/pricetable-30/build/",
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
