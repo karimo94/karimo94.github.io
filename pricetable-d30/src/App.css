@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.App {
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+.App-header {
+    background-color: #47372e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+th {
+    padding: 15px;
+    vertical-align: super;
+}
+
+#card {
+    background-color: #4c3933;
+    border: 2px solid rgb(212, 153, 27);
+    border-radius: 20px;
+    width: 45%;
+}
+
+#table {
+    color: white;
+    border: 0px !important;
+    border-collapse: collapse !important;
+}
+
+@media screen and (max-device-width:800px) {
+    .card {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    #card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    #card {
+        width: fit-content;
+        font-size: 18px;
+    }
+    th>img {
+        width: 200%;
+    }
+}
+
+@media screen and (max-device-width: 320px) {
+    #card {
+        width: fit-content;
+        font-size: 14px;
+    }
+    #drink-img {
+        width: 100%;
+    }
+}
+
+
+/*
+th {
+    border: 0px !important;
+    border-collapse: collapse !important;
+}*/
