@@ -1,0 +1,35 @@
+body {
+    background-color: #001211;
+    background-image: url('dark-mosaic.png');
+    font-family: 'Be Vietnam';
+}
+
+.mdl-card {
+    border-radius: 20px;
+    background-color: steelblue;
+}
+
+.mdl-card__title {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.row {
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#weatherRow {
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#threeHour>.card {
+    border-radius: 30px;
+}
+
+#fiveDay>.card {
+    border-radius: 30px;
+}

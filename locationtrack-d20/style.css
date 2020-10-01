@@ -3,7 +3,7 @@ body {
     background-color: #1b262c;
     /*background-image: linear-gradient(315deg, rgba(38, 9, 58, 1) 0%, rgba(35, 49, 102, 1) 74%);*/
     background-blend-mode: soft-light;
-    font-family: 'Ubuntu';
+    font-family: 'Nanum Gothic';
 }
 
 .mdl-card {
