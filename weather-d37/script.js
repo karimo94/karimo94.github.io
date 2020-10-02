@@ -1,4 +1,4 @@
-const apiKey = '8b4c7c70ae5a3d990c7411428f66e1bb';
+const apiKey = 'f6021935fb17421b4b4cb04040a2c204';
 const currentWeatherEndpoint = 'https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=' + apiKey;
 const forecastEndpoint = 'https://api.openweathermap.org/data/2.5/forecast?q=Seattle&appid=' + apiKey;
 const sun = '<i class="fas fa-sun" style="color: #ff9a76"></i>';
@@ -17,49 +17,37 @@ var iconNowElement = document.getElementById("iconNow");
 });*/
 function refresh() {
     const curWeatherData = grabNowWeather();
+    alert(curWeatherData);
     //let nextWeatherData = grabForecast();
-    renderData(curWeatherData, nextWeatherData);
+    //renderData(curWeatherData, nextWeatherData);
 }
 
 function renderData(data1, dataArray) {
 
 }
 
-async function grabNowWeather() {
-    let data = null;
+function grabNowWeather() {
+    var data = null;
 
-    let response = await fetch(currentWeatherEndpoint + apiKey, {
-        method: 'GET', // GET, POST, PUT, DELETE, etc.
-        mode: 'cors', // no-cors, *cors, same-origin
-        cache: 'no-cache', // default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'same-origin', // include, *same-origin, omit
-        headers: {
-            'Content-Type': 'application/json'
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        redirect: 'follow', // manual, *follow, error
-        referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(data) // body data type must match "Content-Type" header
-    });
-    alert(response.json());
+    var request = new XMLHttpRequest();
+    request.open('GET', currentWeatherEndpoint + apiKey);
+
+    alert(request.status);
+
+    request.onload = function() {
+        var jsonData = JSON.parse(this.response);
+        data = jsonData
+        return data;
+    }
+
+    request.send();
+    alert(request.status);
 
     return data;
 }
 
 function grabForecast() {
-    let request = new XMLHttpRequest();
-    let data = null;
-    request.open('GET', forecastEndpoint);
-    request.onload = function() {
-        let responseData = JSON.parse(request.response);
-        console.log(responseData);
-        if (request.status === 200) {
-            data = responseData;
-        }
-    }
-    request.send();
-    console.log(data);
-    return data;
+    //placeholder
 }
 
 

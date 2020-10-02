@@ -16,6 +16,10 @@ body {
     width: 30%;
 }
 
+h4>p {
+    font-family: 'Rajdhani';
+}
+
 .row {
     border-bottom: 1px solid gold;
     border-radius: 20px;
