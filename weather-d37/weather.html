@@ -14,49 +14,35 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="mdl-card">
+    <div class="mdl-card" id="appBody">
         <div class="mdl-card__title">
             <div class="col-md-10">Seattle, WA</div>
             <div class="col">
-                <a href="" onclick="refresh()"><i class="fas fa-sync-alt" style="color: rgb(36, 35, 35);"></i></a></div>
+                <a href="" onclick="refresh(event)"><i class="fas fa-sync-alt" style="color: rgb(36, 35, 35);"></i></a></div>
         </div>
         <div class="row" id="weatherRow">
-            <div class="col" id="tempNow">temp</div>
-            <div class="col" id="iconNow">icon</div>
+            <div class="col">
+                <h1 id="tempNow">temp</h1>
+                <h5 id="descNow">desc</h5>
+                <h6 id="windNow">wind</h6>
+            </div>
+
+            <div class="col">
+                <h1 id="iconNow">icon</h1>
+                <h5 id="humNow">humidity</h5>
+                <h6 id="speedNow">speed</h6>
+            </div>
+
         </div>
-        <div class="row" id="threeHour">
-            <div class="col">
-                <div class="card" id="hour1">forecast1</div>
-            </div>
-            <div class="col">
-                <div class="card" id="hour2">forecast2</div>
-            </div>
-            <div class="col">
-                <div class="card" id="hour3">forecast3</div>
-            </div>
-        </div>
-        <div class="row" id="fiveDay">
-            <div class="col-4">
-                <div class="card" id="day1">forecast1</div>
-            </div>
-            <div class="col-4">
-                <div class="card" id="day2">forecast2</div>
-            </div>
-            <div class="col-4">
-                <div class="card" id="day3">forecast3</div>
-            </div>
-            <div class="col-4">
-                <div class="card" id="day4">forecast4</div>
-            </div>
-            <div class="col-4">
-                <div class="card" id="day5">forecast5</div>
-            </div>
+        <div class="row" id="sixDay">
         </div>
     </div>
 
