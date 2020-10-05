@@ -37,7 +37,7 @@ function refresh(event) {
 function grabNowWeatherAndRender() {
     var request = new XMLHttpRequest();
     request.open('GET', currentWeatherEndpoint);
-    request.setRequestHeader("Access-Control-Allow-Origin", "*");
+    request.setRequestHeader("Access-Control-Allow-Origin", "https://karimo94.github.io/weather-d37/weather.html");
     request.setRequestHeader("Access-Control-Allow-Headers", "*");
     request.setRequestHeader('Access-Control-Allow-Credentials', true);
     request.setRequestHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
@@ -72,7 +72,7 @@ function grabNowWeatherAndRender() {
 function grabForecastAndRender() {
     var request = new XMLHttpRequest();
     request.open('GET', forecastEndpoint);
-    request.setRequestHeader("Access-Control-Allow-Origin", "*");
+    request.setRequestHeader("Access-Control-Allow-Origin", "https://karimo94.github.io/weather-d37/weather.html");
     request.setRequestHeader("Access-Control-Allow-Headers", "*");
     request.setRequestHeader('Access-Control-Allow-Credentials', true);
     request.setRequestHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
