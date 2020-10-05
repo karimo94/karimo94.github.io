@@ -38,7 +38,7 @@ function grabNowWeatherAndRender() {
     var request = new XMLHttpRequest();
     request.open('GET', currentWeatherEndpoint);
     request.setRequestHeader("Access-Control-Allow-Origin", "*");
-    //request.setRequestHeader("Access-Control-Allow-Headers", "x-requested-with, Content-Type, origin, authorization, accept, client-security-token");
+    request.setRequestHeader("*");
     request.setRequestHeader('Access-Control-Allow-Credentials', true);
     request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST');
     request.onload = function() {
@@ -73,7 +73,7 @@ function grabForecastAndRender() {
     var request = new XMLHttpRequest();
     request.open('GET', forecastEndpoint);
     request.setRequestHeader("Access-Control-Allow-Origin", "*");
-    //request.setRequestHeader("Access-Control-Allow-Headers", "*");
+    request.setRequestHeader("Access-Control-Allow-Headers", "*");
     request.setRequestHeader('Access-Control-Allow-Credentials', true);
     request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST');
     var root = $('#sixDay');
