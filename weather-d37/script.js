@@ -20,7 +20,6 @@ var speedNowElement = document.getElementById("speedNow");
 var humNowElement = document.getElementById("humNow");
 var currentWeatherData = null;
 var forecastWeatherData = null;
-var metricFlag = true; //used for C/F options
 
 $(document).ready(function() {
     grabNowWeatherAndRender();
@@ -37,10 +36,11 @@ function refresh(event) {
 function grabNowWeatherAndRender() {
     var request = new XMLHttpRequest();
     request.open('GET', currentWeatherEndpoint);
-    request.setRequestHeader("Access-Control-Allow-Origin", "https://karimo94.github.io");
-    request.setRequestHeader("Access-Control-Allow-Headers", "*");
+    request.setRequestHeader("Access-Control-Allow-Origin", "*");
+    request.setRequestHeader("Access-Control-Allow-Headers", "Origin, Content-Type, X-Auth-Token");
     request.setRequestHeader('Access-Control-Allow-Credentials', true);
     request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST');
+    request.setRequestHeader("Content-Type", "application/json");
     request.onload = function() {
 
         var jsonData = JSON.parse(this.response);
@@ -135,7 +135,7 @@ function dayNumToDayOfWeek(value) {
     let day = '';
     //reset
     if (value > 6) {
-        value -= 6;
+        value -= 7;
     }
     switch (value) {
         case 0:
