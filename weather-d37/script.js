@@ -67,9 +67,6 @@ function grabNowWeatherAndRender() {
 function grabForecastAndRender() {
     var request = new XMLHttpRequest();
     request.open('GET', forecastEndpoint);
-    request.setRequestHeader("Access-Control-Allow-Origin", "https://karimo94.github.io");
-    request.setRequestHeader("Access-Control-Allow-Headers", "*");
-    request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST');
     var root = $('#sixDay');
     root.empty(); //re-draw
     var card = '';
