@@ -1,0 +1,58 @@
+body {
+    background-color: #000000;
+    background-image: url("crisp-paper-ruffles.png");
+    font-family: 'Piazzolla';
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Dosis';
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#mainBody {
+    background-image: url(Brioche-Bread01-scaled.jpg);
+    background-size: cover;
+    margin: auto;
+    width: 67%;
+    border-radius: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#innerCard {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    color: black;
+}
+
+.col-md-6 {
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 20px;
+}
+
+li {
+    font-size: 16px;
+}
+
+@media screen and (max-device-width: 768px) {
+    #mainBody {
+        width: 95%;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    #mainBody {
+        width: 100%;
+    }
+}
