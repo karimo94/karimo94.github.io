@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+.App {
+    text-align: center;
+    font-family: 'Manrope';
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+#card {
+    border: 2px solid white;
+    border-radius: 20px;
+    color: black;
+    width: 80%;
+}
+
+.Note {
+    padding-bottom: 10px;
+}
+
+#cardTitle {
+    background-color: rgb(152, 255, 152);
+    border-radius: 20px;
+}
+
+#cardTitle>.card-title {
+    font-size: xx-large;
+}
+
+#addNote {
+    float: right;
+    display: inline;
+    font-size: xx-large;
+}
+
+@media screen and (max-device-width: 768px) {
+    #card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    #card {
+        width: 100%;
+    }
+}

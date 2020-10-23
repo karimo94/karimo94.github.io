@@ -1,0 +1,61 @@
+#chkBox {
+    transform: scale(1.7);
+    margin-right: 10px;
+    display: inline;
+    float: left;
+}
+
+.form-inline {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.input-group {
+    width: 90% !important;
+}
+
+.form-control {
+    margin: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 90% !important;
+    display: inline;
+}
+
+.Button {
+    float: right;
+}
+
+@media screen and (max-device-width: 768px) {
+    .form-control {
+        width: 85% !important;
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    #chkBox {
+        transform: scale(1.7);
+        margin-top: 12px;
+        display: inline;
+        float: left;
+    }
+    .form-control {
+        margin: auto;
+        width: 80% !important;
+        display: inline;
+    }
+    .Button {
+        margin-left: 4px;
+        margin-right: 4px;
+        display: inline;
+    }
+}
+
+@media screen and (max-device-width: 320px) {
+    .form-control {
+        width: 70% !important;
+    }
+}
