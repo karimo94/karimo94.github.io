@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Karim O. Activity Feed UI/UX</title>
+
+    <!-- CSS only -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <p>Champions League</p>
+            <h6>Group E</h6>
+            <h2>
+                <img src="afcbadge.png" id="homeBadge" />
+                <span id="score">3 : 2</span>
+                <img src="napolibadge.png" id="awayBadge" />
+            </h2>
+            <div class="row" id="teamNames">
+                <div class="col" id="homeTeamName">
+                    <h3>Arsenal</h3>
+                </div>
+                <div class="col" id="awayTeamName">
+                    <h3>Napoli</h3>
+                </div>
+            </div>
+            <h5 id="matchTime"><i class="fa fa-stopwatch"></i> 71'</h5>
+        </div>
+        <ol class="activity-feed">
+            <li class="feed-item">
+                <time class="date">70'</time>
+                <span class="text">Brilliant save by <a href="">Meret</a>! Shot from <a href="">Aubameyang</a> after a rebound from the Napoli goal post.</span>
+            </li>
+            <li class="feed-item">
+                <time class="date">67'</time>
+                <span class="text"><i class="far fa-futbol"></i> GOOOAAALLLL! <a href="">Insigne</a> with a powerful shot from outside the box after a misplaced Arsenal defence clearance. 3-2 Napoli.</span>
+            </li>
+            <li class="feed-item">
+                <time class="date">65'</time>
+                <span class="text">Corner awarded for Napoli. <a href="">Zieliński</a> to take. Manolas on the Arsenal backpost.</span>
+            </li>
+            <li class="feed-item">
+                <time class="date">57'</time>
+                <span class="text"><i class="far fa-futbol"></i> GOOOAAALLLL! Beautifully put into top left corner by <a href="">Dani Ceballos.</a> 3-1 to Arsenal.</span>
+            </li>
+            <li class="feed-item">
+                <time class="date">56'</time>
+                <span class="text">Freekick awarded to Arsenal, 26m distance to goal.</span>
+            </li>
+            <li class="feed-item">
+                <time class="date">55'</time>
+                <span class="text">Foul by <a href="">Di Lorenzo (Napoli).</a> Yellow card.</span>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
