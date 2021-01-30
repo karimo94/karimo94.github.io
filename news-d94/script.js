@@ -9,13 +9,14 @@ var cardImg = null;
 var cardTitle = null;
 var cardDesc = null;
 var cardLink = null;
+var defaultImage = 'newsdefault.jpg';
 //should really use React for this kind of shit but fuck it
 var articleCard = '';
 
-var endpoint = 'https://newsapi.org/v2/top-headlines?' +
-    'country=' + currentCountryCode + '&' +
-    'category=' + currentCategory + '&' +
-    'apiKey=30b01480a2114c6f8d92f06857cfd306';
+var apiEndpoint = 'http://api.mediastack.com/v1/news' +
+    '?access_key=aff7da06ac0384b53458576da8ce0a79' +
+    '&categories=' + currentCategory +
+    '&countries=' + currentCountryCode;
 
 $(document).ready(function() {
     fetchData();
@@ -23,11 +24,11 @@ $(document).ready(function() {
 
 function fetchData() {
     var request = new XMLHttpRequest();
-    request.open('GET', endpoint);
+    request.open('GET', apiEndpoint);
     request.onload = function() {
         var jsonData = JSON.parse(this.response);
         console.log(jsonData);
-        headlinesList = jsonData.articles;
+        headlinesList = jsonData.data;
         topHeadline = headlinesList[0];
         console.log(headlinesList.length);
         renderJumbotron();
@@ -41,18 +42,19 @@ function renderJumbotron() {
     jumbotronElement.innerHTML = topHeadline.title;
     jumbotronCaption.innerHTML = topHeadline.description;
     document.getElementById("jumboBtnLink").href = topHeadline.url;
-    document.getElementsByClassName("jumbotron")[0].style.backgroundImage = 'url(' + topHeadline.urlToImage + ')';
+    var topHeadlineImage = topHeadline.image == null ? defaultImage : topHeadline.image;
+    document.getElementsByClassName("jumbotron")[0].style.backgroundImage = 'url(' + topHeadlineImage + ')';
     document.getElementsByClassName("jumbotron")[0].style.backgroundSize = 'cover';
 }
 
 function renderComponents() {
     root.empty();
     //render cards using the headlinesList
-    for (var i = 1; i < headlinesList.length; i += 1) {
+    for (var i = 1; i < headlinesList.length - 1; i += 1) {
         var headlineItem = headlinesList[i];
         cardTitle = headlineItem.title;
         cardDesc = headlineItem.description;
-        cardImg = headlineItem.urlToImage;
+        cardImg = headlineItem.image == null ? defaultImage : headlineItem.image;
         cardLink = headlineItem.url;
         articleCard = returnUpdatedNewsCard(cardImg, cardTitle, cardDesc, cardLink);
         root.append(articleCard);
@@ -64,7 +66,7 @@ function updateLocaleAndRender(newLocale) {
     //from the dropdown
     //and re-renders
     currentCountryCode = newLocale;
-    endpoint = updateEndpoint();
+    apiEndpoint = updateEndpoint();
     fetchData();
 }
 
@@ -93,7 +95,7 @@ function updateCategoryAndRender(newCategory) {
         default:
             document.getElementById("homeItem").className += " active";
     }
-    endpoint = updateEndpoint();
+    apiEndpoint = updateEndpoint();
     fetchData();
 }
 //again should really use React for this, oh well...
@@ -105,10 +107,10 @@ function returnUpdatedNewsCard(picture, title, desc, link) {
 }
 
 function updateEndpoint() {
-    return 'https://newsapi.org/v2/top-headlines?' +
-        'country=' + currentCountryCode + '&' +
-        'category=' + currentCategory + '&' +
-        'apiKey=30b01480a2114c6f8d92f06857cfd306';
+    return 'http://api.mediastack.com/v1/news' +
+        '?access_key=aff7da06ac0384b53458576da8ce0a79' +
+        '&categories=' + currentCategory +
+        '&countries=' + currentCountryCode;
 }
 
 function gSearch() {
