@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .jumbotron {
     margin-top: -2em;
     background: url('natural-default-pattern.png');
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
 }
 
 .jumbotron div {

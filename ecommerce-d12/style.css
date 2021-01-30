@@ -78,6 +78,10 @@ footer p {
     border-radius: 10px;
 }
 
+#addToCartBtn {
+    margin-bottom: 5%;
+}
+
 
 /*breadcrumb stuff*/
 

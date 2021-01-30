@@ -1,0 +1,56 @@
+/*Add styles for mobile displays, font face, card component, and body*/
+
+body {
+    font-family: 'Playfair Display', cursive;
+}
+
+.active {
+    border-bottom: solid 2px gold;
+}
+
+#jumbotron,
+#jumboDescription {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-brand {
+    font-size: x-large;
+}
+
+.navbar-nav {
+    font-size: x-large;
+}
+
+a {
+    color: navy;
+}
+
+h5 {
+    font-family: 'Playfair Display', cursive;
+}
+
+p {
+    font-family: 'Manrope';
+}
+
+.card {
+    margin: 5px;
+    border-style: groove;
+}
+
+
+/*Mobile layout styles here*/
+
+@media screen and (max-device-width: 375px) {
+    .card {
+        overflow: hidden;
+    }
+    .card>h5,
+    p {
+        font-size: x-small;
+        word-wrap: break-word;
+    }
+    .card>img {
+        width: 150%;
+    }
+}
