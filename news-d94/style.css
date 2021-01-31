@@ -38,6 +38,20 @@ p {
     border-style: groove;
 }
 
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+    color: white;
+}
+
+footer a {
+    color: paleturquoise;
+}
+
 
 /*Mobile layout styles here*/
 
