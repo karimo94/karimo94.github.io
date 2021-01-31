@@ -1,7 +1,7 @@
 var headlinesList = [];
 var topHeadline = null;
 var currentCountryCode = 'us';
-var currentCategory = 'general';
+var currentCategory = 'world';
 var jumbotronElement = document.getElementById("jumbotron");
 var jumbotronCaption = document.getElementById("jumboDescription");
 var root = $('#root');
@@ -12,11 +12,8 @@ var cardLink = null;
 var defaultImage = 'newsdefault.jpg';
 //should really use React for this kind of shit but fuck it
 var articleCard = '';
-
-var apiEndpoint = 'http://api.mediastack.com/v1/news' +
-    '?access_key=aff7da06ac0384b53458576da8ce0a79' +
-    '&categories=' + currentCategory +
-    '&countries=' + currentCountryCode;
+//use NY times API or newscaf API endpoint
+var apiEndpoint = 'https://newscafapi.p.rapidapi.com/apirapid/news/' + currentCategory + '/';
 
 $(document).ready(function() {
     fetchData();
@@ -24,11 +21,14 @@ $(document).ready(function() {
 
 function fetchData() {
     var request = new XMLHttpRequest();
+    request.withCredentials = true;
     request.open('GET', apiEndpoint);
+    request.setRequestHeader("x-rapidapi-key", "6d5ddf4253msheeba427e625ba5cp1faeccjsn38ba6857eb85");
+    request.setRequestHeader("x-rapidapi-host", "newscafapi.p.rapidapi.com");
     request.onload = function() {
         var jsonData = JSON.parse(this.response);
         console.log(jsonData);
-        headlinesList = jsonData.data;
+        headlinesList = jsonData; //the api returns an array
         topHeadline = headlinesList[0];
         console.log(headlinesList.length);
         renderJumbotron();
@@ -40,9 +40,9 @@ function fetchData() {
 function renderJumbotron() {
     //renders the first top headline
     jumbotronElement.innerHTML = topHeadline.title;
-    jumbotronCaption.innerHTML = topHeadline.description;
-    document.getElementById("jumboBtnLink").href = topHeadline.url;
-    var topHeadlineImage = topHeadline.image == null ? defaultImage : topHeadline.image;
+    jumbotronCaption.innerHTML = topHeadline.content.split(".")[0];
+    document.getElementById("jumboBtnLink").href = topHeadline.source_url;
+    var topHeadlineImage = topHeadline.img;
     document.getElementsByClassName("jumbotron")[0].style.backgroundImage = 'url(' + topHeadlineImage + ')';
     document.getElementsByClassName("jumbotron")[0].style.backgroundSize = 'cover';
 }
@@ -53,9 +53,9 @@ function renderComponents() {
     for (var i = 1; i < headlinesList.length - 1; i += 1) {
         var headlineItem = headlinesList[i];
         cardTitle = headlineItem.title;
-        cardDesc = headlineItem.description;
-        cardImg = headlineItem.image == null ? defaultImage : headlineItem.image;
-        cardLink = headlineItem.url;
+        cardDesc = headlineItem.content.split(".")[0];
+        cardImg = headlineItem.img == null ? defaultImage : headlineItem.img;
+        cardLink = headlineItem.source_url;
         articleCard = returnUpdatedNewsCard(cardImg, cardTitle, cardDesc, cardLink);
         root.append(articleCard);
     }
@@ -65,9 +65,10 @@ function updateLocaleAndRender(newLocale) {
     //updates the selected locale of the news app
     //from the dropdown
     //and re-renders
+    //this is a premium feature that is only available on paid API subscriptions
     currentCountryCode = newLocale;
-    apiEndpoint = updateEndpoint();
-    fetchData();
+    //apiEndpoint = updateEndpoint();
+    //fetchData();
 }
 
 function updateCategoryAndRender(newCategory) {
@@ -107,10 +108,7 @@ function returnUpdatedNewsCard(picture, title, desc, link) {
 }
 
 function updateEndpoint() {
-    return 'http://api.mediastack.com/v1/news' +
-        '?access_key=aff7da06ac0384b53458576da8ce0a79' +
-        '&categories=' + currentCategory +
-        '&countries=' + currentCountryCode;
+    return 'https://newscafapi.p.rapidapi.com/apirapid/news/' + currentCategory + '/';
 }
 
 function gSearch() {
