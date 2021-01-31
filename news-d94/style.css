@@ -25,6 +25,8 @@ a {
     color: navy;
 }
 
+h3,
+h4,
 h5 {
     font-family: 'Playfair Display', cursive;
 }
@@ -34,8 +36,22 @@ p {
 }
 
 .card {
-    margin: 5px;
+    margin-bottom: 2px;
+    max-width: 100%;
     border-style: groove;
+    overflow: hidden;
+}
+
+.cardTitle {
+    max-width: 95%;
+}
+
+.cardDesc {
+    max-width: 80%;
+}
+
+img {
+    width: 100%;
 }
 
 footer {
@@ -57,14 +73,15 @@ footer a {
 
 @media screen and (max-device-width: 375px) {
     .card {
-        overflow: hidden;
+        max-width: 100%;
     }
-    .card>h5,
-    p {
-        font-size: x-small;
-        word-wrap: break-word;
+    .cardTitle {
+        max-width: 90%;
     }
-    .card>img {
-        width: 150%;
+    .cardDesc {
+        max-width: 80%;
+    }
+    img {
+        width: 100%;
     }
 }

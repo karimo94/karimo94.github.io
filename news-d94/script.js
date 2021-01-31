@@ -12,8 +12,9 @@ var cardLink = null;
 var defaultImage = 'newsdefault.jpg';
 //should really use React for this kind of shit but fuck it
 var articleCard = '';
-//use NY times API or newscaf API endpoint
-var apiEndpoint = 'https://newscafapi.p.rapidapi.com/apirapid/news/' + currentCategory + '/';
+//use NY times API endpoint
+var apiEndpoint = 'https://api.nytimes.com/svc/topstories/v2/' +
+    currentCategory + '.json?api-key=EjG1YtpjWV9tIzzfr8JGj65EH1zAIyZz';
 
 $(document).ready(function() {
     fetchData();
@@ -21,14 +22,11 @@ $(document).ready(function() {
 
 function fetchData() {
     var request = new XMLHttpRequest();
-    request.withCredentials = true;
     request.open('GET', apiEndpoint);
-    request.setRequestHeader("x-rapidapi-key", "6d5ddf4253msheeba427e625ba5cp1faeccjsn38ba6857eb85");
-    request.setRequestHeader("x-rapidapi-host", "newscafapi.p.rapidapi.com");
     request.onload = function() {
         var jsonData = JSON.parse(this.response);
         console.log(jsonData);
-        headlinesList = jsonData; //the api returns an array
+        headlinesList = jsonData.results; //the api returns an array
         topHeadline = headlinesList[0];
         console.log(headlinesList.length);
         renderJumbotron();
@@ -40,9 +38,9 @@ function fetchData() {
 function renderJumbotron() {
     //renders the first top headline
     jumbotronElement.innerHTML = topHeadline.title;
-    jumbotronCaption.innerHTML = topHeadline.content.split(".")[0];
-    document.getElementById("jumboBtnLink").href = topHeadline.source_url;
-    var topHeadlineImage = topHeadline.img;
+    jumbotronCaption.innerHTML = topHeadline.abstract;
+    document.getElementById("jumboBtnLink").href = topHeadline.url;
+    var topHeadlineImage = topHeadline.multimedia[0].url;
     document.getElementsByClassName("jumbotron")[0].style.backgroundImage = 'url(' + topHeadlineImage + ')';
     document.getElementsByClassName("jumbotron")[0].style.backgroundSize = 'cover';
 }
@@ -53,9 +51,9 @@ function renderComponents() {
     for (var i = 1; i < headlinesList.length - 1; i += 1) {
         var headlineItem = headlinesList[i];
         cardTitle = headlineItem.title;
-        cardDesc = headlineItem.content.split(".")[0];
-        cardImg = headlineItem.img == null ? defaultImage : headlineItem.img;
-        cardLink = headlineItem.source_url;
+        cardDesc = headlineItem.abstract;
+        cardImg = headlineItem.multimedia[0].url;
+        cardLink = headlineItem.url;
         articleCard = returnUpdatedNewsCard(cardImg, cardTitle, cardDesc, cardLink);
         root.append(articleCard);
     }
@@ -102,13 +100,14 @@ function updateCategoryAndRender(newCategory) {
 //again should really use React for this, oh well...
 function returnUpdatedNewsCard(picture, title, desc, link) {
     return '<div class="card"><div class="row"><div class="col-6"><img src="' +
-        picture + '" alt="Image" width="100%"/></div><div class="col-6"><div class="row"><h5><a href="' +
-        link + '">' + title + '</a>' + '</h5></div><div class="row"><p>' +
+        picture + '" alt="Image"/></div><div class="col-6"><div class="row"><h4 class="cardTitle"><a href="' +
+        link + '">' + title + '</a>' + '</h4></div><div class="row"><p class="cardDesc">' +
         desc + '</p></div></div></div></div>';
 }
 
 function updateEndpoint() {
-    return 'https://newscafapi.p.rapidapi.com/apirapid/news/' + currentCategory + '/';
+    return 'https://api.nytimes.com/svc/topstories/v2/' +
+        currentCategory + '.json?api-key=EjG1YtpjWV9tIzzfr8JGj65EH1zAIyZz';
 }
 
 function gSearch() {
