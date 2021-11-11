@@ -12,7 +12,6 @@ import madeleine from './madeleine.png'
 import croissant from './croissant.png'
 
 
-
 const imgHeaderStyle = {
   width:'50%',
   borderImageOutset: '10px'
@@ -34,7 +33,7 @@ class App extends React.Component {
   state = {
     cartItems: 0
   };
-
+  
   //function
   appendToOrder = (item) => {
     this.setState(

@@ -1,0 +1,75 @@
+body {
+    background: url(flightsearchsplash.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.navbar {
+    /*background-color: rgba(255, 255, 255, .3);
+    border-bottom: 2px solid white;*/
+    width: min-content;
+    margin: auto;
+}
+
+.navbar li {
+    margin-right: 15px;
+    margin-left: 15px;
+    border-left: 1px solid rgba(47, 79, 79, .5);
+    font-size: x-large;
+}
+
+.fontAwesome {
+    font-family: Helvetica, FontAwesome, sans-serif;
+}
+
+.card {
+    margin: auto;
+    margin-top: 7%;
+    background-color: rgba(255, 254, 254, 0.5);
+    width: 75%;
+    border: 0px;
+}
+
+.row {
+    margin-bottom: 2%;
+}
+
+#colTwo {
+    border-left: solid black 1px;
+}
+
+@media screen and (max-device-width: 414px) {
+    .card {
+        width: 100%;
+    }
+    h1 {
+        font-size: 350%;
+    }
+    img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-device-width: 375px) {
+    .card {
+        width: 100%;
+    }
+    h1 {
+        font-size: 300%;
+    }
+    img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-device-width: 320px) {
+    .card {
+        width: 100%;
+    }
+    h1 {
+        font-size: 250%;
+    }
+    img {
+        width: 20%;
+    }
+}
