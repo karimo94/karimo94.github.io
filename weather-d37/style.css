@@ -1,6 +1,7 @@
 body {
-    background-color: #001211;
-    background-image: url('dark-mosaic.png');
+    /*background-color: #001211;*/
+    background-image: url('mountains-1643437695775-6372.jpg');
+    background-size: cover;
     font-family: 'Josefin Sans';
 }
 
@@ -9,6 +10,7 @@ body {
     background-color: steelblue;
     margin: auto;
     height: 600px;
+    margin-top: 2%;
 }
 
 .mdl-card__title {
