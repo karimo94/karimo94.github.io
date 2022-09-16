@@ -106,6 +106,7 @@ body {
     box-sizing: border-box;
     background-color: black;
     border-radius: 25px;
+    border: 2px solid orange;
 }
 
 .row {
@@ -117,6 +118,7 @@ body {
     margin-top: 20px;
     color: white;
     font-weight: bold;
+    border: 1px solid orange;
 }
 
 .mdl-textfield__input {

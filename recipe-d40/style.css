@@ -1,6 +1,7 @@
 body {
     background-color: #000000;
-    background-image: url("crisp-paper-ruffles.png");
+    background-image: url("baking_stock.jpg");
+    background-size: cover;
     font-family: 'Piazzolla';
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
@@ -37,7 +38,7 @@ p {
 }
 
 .col-md-6 {
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.605);
     border-radius: 20px;
 }
 
